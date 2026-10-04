@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mori · 探头动作预览</title>
+<style>
+*{box-sizing:border-box}body{margin:0;padding:32px;background:#eef3fa;color:#263652;font-family:system-ui,sans-serif}
+main{max-width:1200px;margin:auto}h1{font-size:24px;margin:0 0 10px}p{margin:0 0 22px;color:#596983}
+.views{display:grid;grid-template-columns:1fr 1fr;gap:20px}.card{padding:16px;border-radius:20px;background:white;box-shadow:0 8px 28px #2338590c}
+h2{font-size:16px;margin:0 0 12px}.drawing{height:450px;display:grid;place-items:center;border-radius:12px;background:repeating-conic-gradient(#edf1f6 0% 25%,#fff 0% 50%) 0 0/24px 24px}
+.drawing img{max-width:100%;max-height:420px;object-fit:contain}.scene-wrap{overflow:auto;border-radius:12px;background:#e2ebf8}
+.scene{position:relative;width:560px;height:450px;overflow:hidden}.pet{position:absolute;width:480px;height:auto;left:46px;top:15px;z-index:1}
+.window{position:absolute;left:20px;top:8px;width:340px;height:422px;background:#fff;border:1px solid #c4cfdf;border-right:3px solid #8e9db5;border-radius:12px 0 0 12px;z-index:2;box-shadow:4px 0 14px #24395c16;overflow:hidden}
+.bar{height:38px;padding:12px 15px;background:#f4f6fa;border-bottom:1px solid #e2e7ef;font-size:12px;color:#63718a}.content{padding:24px}.content strong{font-size:18px}.line{height:9px;background:#e9edf4;border-radius:8px;margin-top:18px}.line:nth-child(3){width:83%}.line:nth-child(4){width:64%}
+.controls{display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin-top:14px;font-size:13px}.controls label{display:flex;gap:7px;align-items:center}input[type=range]{width:130px}button{border:1px solid #d5deea;border-radius:8px;background:white;color:#425675;padding:6px 10px;cursor:pointer}
+.caption{margin:12px 0 0;font-size:13px;line-height:1.6}@media(max-width:850px){body{padding:18px}.views{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<main>
+<h1>Mori · 侧身探头</h1>
+<p>表情沿用已确认的版本，调整侧身、扶边和另一只手放低的姿势。</p>
+<div class="views">
+<section class="card">
+<h2>完整原画</h2>
+<div class="drawing"><img src="peek-pose.png" alt="Mori 侧身探头，头向右伸出，一只手搭边，另一只手放低，鲸鱼尾巴向左展开"></div>
+<p class="caption">保留整张透明原画，便于查看姿势和尾巴。</p>
+</section>
+<section class="card">
+<h2>窗口边缘效果</h2>
+<div class="scene-wrap"><div class="scene">
+<img class="pet" id="pet" src="peek-pose.png" alt="Mori 从窗口右侧探头">
+<div class="window" id="window"><div class="bar">示意窗口</div><div class="content"><strong>正在工作</strong><div class="line"></div><div class="line"></div><div class="line"></div></div></div>
+</div></div>
+<div class="controls">
+<label><input id="occlusion" type="checkbox" checked>窗口遮挡</label>
+<label>探出距离<input id="distance" type="range" min="-24" max="48" value="0"></label>
+<button id="reset" type="button">重置</button>
+</div>
+<p class="caption">切换遮挡或调整距离，看看身体藏在窗口后时的探头效果。</p>
+</section>
+</div>
+</main>
+<script>
+const pet=document.getElementById('pet');
+const windowPanel=document.getElementById('window');
+const distance=document.getElementById('distance');
+const occlusion=document.getElementById('occlusion');
+function update(){pet.style.left=(46+Number(distance.value))+'px';windowPanel.style.display=occlusion.checked?'block':'none';}
+distance.addEventListener('input',update);
+occlusion.addEventListener('change',update);
+document.getElementById('reset').addEventListener('click',function(){distance.value='0';occlusion.checked=true;update();});
+</script>
+</body>
+</html>

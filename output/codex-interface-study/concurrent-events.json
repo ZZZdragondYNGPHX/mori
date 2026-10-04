@@ -1,0 +1,412 @@
+{
+  "mori_task_a": [
+    {
+      "method": "item/tool/requestUserInput",
+      "id": 0,
+      "params": {
+        "threadId": "01a1065f-d5a1-7eb2-b463-44cdfe9a799d",
+        "turnId": "01a1065f-d5bc-7781-afab-70b208b5aa1c",
+        "itemId": "call_local",
+        "questions": [
+          {
+            "id": "local_choice",
+            "header": "Local probe",
+            "question": "Choose for the isolated probe.",
+            "isOther": true,
+            "isSecret": false,
+            "options": [
+              {
+                "label": "A",
+                "description": "First"
+              },
+              {
+                "label": "B",
+                "description": "Second"
+              }
+            ]
+          }
+        ],
+        "isBlocking": true,
+        "autoResolutionMs": null
+      }
+    },
+    {
+      "method": "serverRequest/resolved",
+      "params": {
+        "threadId": "01a1065f-d5a1-7eb2-b463-44cdfe9a799d",
+        "requestId": 0
+      },
+      "emittedAtMs": 1791108306798
+    },
+    {
+      "method": "item/started",
+      "params": {
+        "item": {
+          "type": "agentMessage",
+          "id": "msg_local_3",
+          "text": "",
+          "phase": "final_answer",
+          "memoryCitation": null,
+          "delivery": null,
+          "questions": null
+        },
+        "threadId": "01a1065f-d5a1-7eb2-b463-44cdfe9a799d",
+        "turnId": "01a1065f-d5bc-7781-afab-70b208b5aa1c",
+        "startedAtMs": 1791108306812
+      },
+      "emittedAtMs": 1791108306812
+    },
+    {
+      "method": "item/completed",
+      "params": {
+        "item": {
+          "type": "agentMessage",
+          "id": "msg_local_3",
+          "text": "Mori local probe text.",
+          "phase": "final_answer",
+          "memoryCitation": null,
+          "delivery": null,
+          "questions": null
+        },
+        "threadId": "01a1065f-d5a1-7eb2-b463-44cdfe9a799d",
+        "turnId": "01a1065f-d5bc-7781-afab-70b208b5aa1c",
+        "completedAtMs": 1791108306812
+      },
+      "emittedAtMs": 1791108306812
+    },
+    {
+      "method": "turn/completed",
+      "params": {
+        "threadId": "01a1065f-d5a1-7eb2-b463-44cdfe9a799d",
+        "turn": {
+          "id": "01a1065f-d5bc-7781-afab-70b208b5aa1c",
+          "items": [
+            {
+              "type": "agentMessage",
+              "id": "msg_local_3",
+              "text": "Mori local probe text.",
+              "phase": "final_answer",
+              "memoryCitation": null,
+              "delivery": null,
+              "questions": null
+            }
+          ],
+          "itemsView": "summary",
+          "status": "completed",
+          "error": null,
+          "startedAt": 1791108306,
+          "completedAt": 1791108306,
+          "durationMs": 449
+        }
+      },
+      "emittedAtMs": 1791108306815
+    }
+  ],
+  "mori_task_b": [
+    {
+      "method": "item/tool/requestUserInput",
+      "id": 1,
+      "params": {
+        "threadId": "01a1065f-d5f3-7060-aa00-cdde493acdae",
+        "turnId": "01a1065f-d60b-7c21-84bb-a5608085b53a",
+        "itemId": "call_local",
+        "questions": [
+          {
+            "id": "local_choice",
+            "header": "Local probe",
+            "question": "Choose for the isolated probe.",
+            "isOther": true,
+            "isSecret": false,
+            "options": [
+              {
+                "label": "A",
+                "description": "First"
+              },
+              {
+                "label": "B",
+                "description": "Second"
+              }
+            ]
+          }
+        ],
+        "isBlocking": true,
+        "autoResolutionMs": null
+      }
+    },
+    {
+      "method": "serverRequest/resolved",
+      "params": {
+        "threadId": "01a1065f-d5f3-7060-aa00-cdde493acdae",
+        "requestId": 1
+      },
+      "emittedAtMs": 1791108307049
+    },
+    {
+      "method": "item/started",
+      "params": {
+        "item": {
+          "type": "agentMessage",
+          "id": "msg_local_4",
+          "text": "",
+          "phase": "final_answer",
+          "memoryCitation": null,
+          "delivery": null,
+          "questions": null
+        },
+        "threadId": "01a1065f-d5f3-7060-aa00-cdde493acdae",
+        "turnId": "01a1065f-d60b-7c21-84bb-a5608085b53a",
+        "startedAtMs": 1791108307065
+      },
+      "emittedAtMs": 1791108307065
+    },
+    {
+      "method": "item/completed",
+      "params": {
+        "item": {
+          "type": "agentMessage",
+          "id": "msg_local_4",
+          "text": "Mori local probe text.",
+          "phase": "final_answer",
+          "memoryCitation": null,
+          "delivery": null,
+          "questions": null
+        },
+        "threadId": "01a1065f-d5f3-7060-aa00-cdde493acdae",
+        "turnId": "01a1065f-d60b-7c21-84bb-a5608085b53a",
+        "completedAtMs": 1791108307065
+      },
+      "emittedAtMs": 1791108307066
+    },
+    {
+      "method": "turn/completed",
+      "params": {
+        "threadId": "01a1065f-d5f3-7060-aa00-cdde493acdae",
+        "turn": {
+          "id": "01a1065f-d60b-7c21-84bb-a5608085b53a",
+          "items": [
+            {
+              "type": "agentMessage",
+              "id": "msg_local_4",
+              "text": "Mori local probe text.",
+              "phase": "final_answer",
+              "memoryCitation": null,
+              "delivery": null,
+              "questions": null
+            }
+          ],
+          "itemsView": "summary",
+          "status": "completed",
+          "error": null,
+          "startedAt": 1791108306,
+          "completedAt": 1791108307,
+          "durationMs": 623
+        }
+      },
+      "emittedAtMs": 1791108307068
+    }
+  ],
+  "mori_task_watcher": [
+    {
+      "method": "item/tool/requestUserInput",
+      "id": 0,
+      "params": {
+        "threadId": "01a1065f-d5a1-7eb2-b463-44cdfe9a799d",
+        "turnId": "01a1065f-d5bc-7781-afab-70b208b5aa1c",
+        "itemId": "call_local",
+        "questions": [
+          {
+            "id": "local_choice",
+            "header": "Local probe",
+            "question": "Choose for the isolated probe.",
+            "isOther": true,
+            "isSecret": false,
+            "options": [
+              {
+                "label": "A",
+                "description": "First"
+              },
+              {
+                "label": "B",
+                "description": "Second"
+              }
+            ]
+          }
+        ],
+        "isBlocking": true,
+        "autoResolutionMs": null
+      }
+    },
+    {
+      "method": "item/tool/requestUserInput",
+      "id": 1,
+      "params": {
+        "threadId": "01a1065f-d5f3-7060-aa00-cdde493acdae",
+        "turnId": "01a1065f-d60b-7c21-84bb-a5608085b53a",
+        "itemId": "call_local",
+        "questions": [
+          {
+            "id": "local_choice",
+            "header": "Local probe",
+            "question": "Choose for the isolated probe.",
+            "isOther": true,
+            "isSecret": false,
+            "options": [
+              {
+                "label": "A",
+                "description": "First"
+              },
+              {
+                "label": "B",
+                "description": "Second"
+              }
+            ]
+          }
+        ],
+        "isBlocking": true,
+        "autoResolutionMs": null
+      }
+    },
+    {
+      "method": "serverRequest/resolved",
+      "params": {
+        "threadId": "01a1065f-d5a1-7eb2-b463-44cdfe9a799d",
+        "requestId": 0
+      },
+      "emittedAtMs": 1791108306798
+    },
+    {
+      "method": "item/started",
+      "params": {
+        "item": {
+          "type": "agentMessage",
+          "id": "msg_local_3",
+          "text": "",
+          "phase": "final_answer",
+          "memoryCitation": null,
+          "delivery": null,
+          "questions": null
+        },
+        "threadId": "01a1065f-d5a1-7eb2-b463-44cdfe9a799d",
+        "turnId": "01a1065f-d5bc-7781-afab-70b208b5aa1c",
+        "startedAtMs": 1791108306812
+      },
+      "emittedAtMs": 1791108306812
+    },
+    {
+      "method": "item/completed",
+      "params": {
+        "item": {
+          "type": "agentMessage",
+          "id": "msg_local_3",
+          "text": "Mori local probe text.",
+          "phase": "final_answer",
+          "memoryCitation": null,
+          "delivery": null,
+          "questions": null
+        },
+        "threadId": "01a1065f-d5a1-7eb2-b463-44cdfe9a799d",
+        "turnId": "01a1065f-d5bc-7781-afab-70b208b5aa1c",
+        "completedAtMs": 1791108306812
+      },
+      "emittedAtMs": 1791108306812
+    },
+    {
+      "method": "turn/completed",
+      "params": {
+        "threadId": "01a1065f-d5a1-7eb2-b463-44cdfe9a799d",
+        "turn": {
+          "id": "01a1065f-d5bc-7781-afab-70b208b5aa1c",
+          "items": [
+            {
+              "type": "agentMessage",
+              "id": "msg_local_3",
+              "text": "Mori local probe text.",
+              "phase": "final_answer",
+              "memoryCitation": null,
+              "delivery": null,
+              "questions": null
+            }
+          ],
+          "itemsView": "summary",
+          "status": "completed",
+          "error": null,
+          "startedAt": 1791108306,
+          "completedAt": 1791108306,
+          "durationMs": 449
+        }
+      },
+      "emittedAtMs": 1791108306815
+    },
+    {
+      "method": "serverRequest/resolved",
+      "params": {
+        "threadId": "01a1065f-d5f3-7060-aa00-cdde493acdae",
+        "requestId": 1
+      },
+      "emittedAtMs": 1791108307049
+    },
+    {
+      "method": "item/started",
+      "params": {
+        "item": {
+          "type": "agentMessage",
+          "id": "msg_local_4",
+          "text": "",
+          "phase": "final_answer",
+          "memoryCitation": null,
+          "delivery": null,
+          "questions": null
+        },
+        "threadId": "01a1065f-d5f3-7060-aa00-cdde493acdae",
+        "turnId": "01a1065f-d60b-7c21-84bb-a5608085b53a",
+        "startedAtMs": 1791108307065
+      },
+      "emittedAtMs": 1791108307065
+    },
+    {
+      "method": "item/completed",
+      "params": {
+        "item": {
+          "type": "agentMessage",
+          "id": "msg_local_4",
+          "text": "Mori local probe text.",
+          "phase": "final_answer",
+          "memoryCitation": null,
+          "delivery": null,
+          "questions": null
+        },
+        "threadId": "01a1065f-d5f3-7060-aa00-cdde493acdae",
+        "turnId": "01a1065f-d60b-7c21-84bb-a5608085b53a",
+        "completedAtMs": 1791108307065
+      },
+      "emittedAtMs": 1791108307066
+    },
+    {
+      "method": "turn/completed",
+      "params": {
+        "threadId": "01a1065f-d5f3-7060-aa00-cdde493acdae",
+        "turn": {
+          "id": "01a1065f-d60b-7c21-84bb-a5608085b53a",
+          "items": [
+            {
+              "type": "agentMessage",
+              "id": "msg_local_4",
+              "text": "Mori local probe text.",
+              "phase": "final_answer",
+              "memoryCitation": null,
+              "delivery": null,
+              "questions": null
+            }
+          ],
+          "itemsView": "summary",
+          "status": "completed",
+          "error": null,
+          "startedAt": 1791108306,
+          "completedAt": 1791108307,
+          "durationMs": 623
+        }
+      },
+      "emittedAtMs": 1791108307068
+    }
+  ]
+}

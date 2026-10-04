@@ -1,0 +1,2 @@
+THEME: breeze; no-shadow-hint baseline shadow=True; bubble shadow=False
+PASS: no KDE shadow on Codex/daily bubbles; native circular mask; clicks pass through initially and at corners; continuous 3s hover enables clicks; exit restores pass-through; native ID/geometry/focus stable

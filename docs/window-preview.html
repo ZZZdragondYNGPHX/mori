@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mori Companion · 窗沿的小剧场</title>
+<link rel="stylesheet" href="gesture-preview.css">
+<style>
+.arena{grid-column:1/-1}.arena-stage{margin:16px 20px 0;border-radius:12px;background:radial-gradient(ellipse at 65% 50%,#294259,#182331 75%)}#arena{display:block;width:100%;height:auto;max-width:840px;margin:auto;touch-action:none}.arena-help{padding:16px 20px 20px}.arena-help p{font-size:13px}.scene-controls{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}.scene-controls button,.reaction-controls button,.reaction-controls select{min-height:44px}.state{min-height:24px;color:#f3bec8;font-size:13px;margin-top:12px}.reaction-controls{flex-wrap:wrap}.stage{height:250px}.links{display:flex;gap:14px;flex-wrap:wrap;margin-top:12px;font-size:12px}.view{white-space:nowrap}
+</style>
+</head>
+<body>
+<header>
+<div class="brand">MORI COMPANION / 茉伴</div>
+<div class="intro"><div><h1>窗沿，留一个小位置</h1><p>从两侧悄悄探头，撑住窗沿坐下来。<br>晃一会儿小脚，再稳稳起身；按钮也想轻轻碰一下。</p></div><span class="batch">第四批 · 20 张关键姿势</span></div>
+<p>这是第四批姿势预览；最新的完整空间检查、上沿趴着偷看与平滑过渡请看 <a href="life-preview.html">第五批互动预览</a>。</p>
+<div class="toolbar" aria-label="播放控制"><button id="play" aria-pressed="true">暂停</button><button id="step">下一帧</button><label>速度<select id="speed"><option value=".5">0.5× 慢放</option><option value="1" selected>1× 正常</option><option value="1.5">1.5×</option></select></label><button id="background" aria-pressed="false">透明网格</button><span class="hint">拖动示意窗口的标题栏 · 也可使用下方按钮</span></div>
+<p id="status" class="reduced" aria-live="polite"></p>
+</header>
+<main>
+<section class="card arena"><div class="card-head"><h2>陪她在窗边待一会儿</h2><span class="view">探头 · 坐下 · 晃腿 · 起身 · 伸手</span></div>
+<div class="arena-stage"><canvas id="arena" width="840" height="520" role="img" aria-label="Mori 与示意窗口互动；可用下方按钮选择动作、移动和缩放窗口"></canvas></div>
+<div class="arena-help"><p>拖标题栏移动窗口，拖右下角改变大小，看看手和窗沿如何一起移动。这个预览中的按钮只演示动作；桌宠中的实际最小化仍需开启原有恶作剧设置。</p>
+<div class="scene-controls"><button data-story="left">左侧探头</button><button data-story="right">右侧探头</button><button data-story="sit">坐下晃腿再起身</button><button data-story="press">伸手碰按钮</button><button id="stop">停下来</button><button id="mode" aria-pressed="false">切到专注模式</button></div>
+<div class="scene-controls" aria-label="移动示意窗口"><button id="move-left">窗口左移</button><button id="move-right">窗口右移</button><button id="resize">切换窗口宽度</button><button id="reset">恢复位置</button></div>
+<div id="arena-state" class="state" aria-live="polite">选一个小动作，看看她如何靠近窗口</div><div class="links"><a href="motion-preview.html">第一批：四向步态、摸头与尾巴</a><a href="gesture-preview.html">第二批：戳脸与拖拽落地</a><a href="mouse-preview.html">第三批：鼠标互动</a></div></div>
+</section>
+<div id="cards" style="display:contents"></div>
+</main>
+<footer><p>左右探头分别绘制；坐下、晃腿和起身共用窗沿支撑点。窗口移动时继续当前姿势进度，离开时重新计算走路行程。桌宠沿用已有剧情频率，完整剧情之间留出安静时间。</p><p>专注模式暂停窗口剧情，保留主动点击、拖拽和工作表情。<a href="../output/window-study-v4/prompts.json">原画与内置生图提示词</a> · <a href="../src/asset_library/motion/clips.json">运行素材清单</a></p></footer>
+<script src="window-preview-data.js"></script><script src="window-preview.js"></script>
+</body>
+</html>

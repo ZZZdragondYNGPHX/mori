@@ -1,0 +1,32 @@
+{
+  "model": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+  "revision": "5ecdb67327fd37bb2e042aab12ff7391903235d3",
+  "generation_mode": "voice_design",
+  "speaker": "two_youthful_candidates",
+  "device": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "torch_version": "2.9.1+cu128",
+  "cuda_version": "12.8",
+  "dtype": "bfloat16",
+  "attention": "sdpa",
+  "inference_network": "offline",
+  "loading_seconds": 1.462,
+  "clips": [
+    {
+      "id": "soft_pure",
+      "generation_seconds": 3.177,
+      "native_audio_seconds": 2.64,
+      "native_sample_rate": 24000,
+      "torch_peak_allocated_mib": 4072.0,
+      "torch_peak_reserved_mib": 4150.0
+    },
+    {
+      "id": "bright_young",
+      "generation_seconds": 3.034,
+      "native_audio_seconds": 3.28,
+      "native_sample_rate": 24000,
+      "torch_peak_allocated_mib": 4090.9,
+      "torch_peak_reserved_mib": 4154.0
+    }
+  ],
+  "memory_note": "PyTorch allocator peaks; excludes CUDA context and other desktop processes"
+}

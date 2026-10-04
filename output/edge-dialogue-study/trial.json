@@ -1,0 +1,64 @@
+{
+  "provider_candidate": "Microsoft Edge online TTS via edge-tts",
+  "online_trial": {
+    "status": "not_completed_within_15_seconds",
+    "exit_code": 124,
+    "edge_import": "passed_version_7.2.8",
+    "first_audio_seconds": null,
+    "latency_verified": false
+  },
+  "clips": [
+    {
+      "id": "cached_light_fast",
+      "text": "搞定，还得是我",
+      "source": "output/edge-dialogue-study/source.wav",
+      "source_provider": "Edge TTS zh-CN-XiaoyiNeural",
+      "processing": "local speed/pitch audition of cached audio, not a new API response",
+      "speed_factor": 1.12,
+      "pitch_factor": 1.05,
+      "audio_seconds": 2.418,
+      "listening_status": "rejected_opening_too_fast",
+      "user_feedback": "搞定没听清；还得是我能跟上。",
+      "audition_file_removed": true
+    },
+    {
+      "id": "cached_bright_fast",
+      "text": "搞定，还得是我",
+      "source": "output/edge-dialogue-study/source.wav",
+      "source_provider": "Edge TTS zh-CN-XiaoyiNeural",
+      "processing": "local speed/pitch audition of cached audio, not a new API response",
+      "speed_factor": 1.18,
+      "pitch_factor": 1.1,
+      "audio_seconds": 2.295,
+      "listening_status": "rejected_opening_too_fast",
+      "user_feedback": "搞定没听清；还得是我能跟上。",
+      "audition_file_removed": true
+    },
+    {
+      "id": "cached_clear_opening",
+      "text": "搞定，还得是我",
+      "source": "output/edge-dialogue-study/source.wav",
+      "source_provider": "Edge TTS zh-CN-XiaoyiNeural",
+      "processing": "local cached audio edit, not a new API response",
+      "opening_speed_factor": 0.8,
+      "ending_speed_factor": 1.12,
+      "pitch_factor": 1.05,
+      "lead_in_ms": 250,
+      "extra_clause_gap_ms": 100,
+      "source_opening_seconds": [
+        0,
+        0.5
+      ],
+      "source_ending_start_seconds": 1.1,
+      "audio_seconds": 2.378,
+      "listening_status": "opening_accepted_ending_replaced_by_bright_fast",
+      "validation": "mono 24kHz PCM16, non-silent, no full-scale clipping, 250ms lead-in verified",
+      "audition_file_removed": true
+    }
+  ],
+  "validation": "two valid mono 24kHz PCM16 non-silent WAVs without full-scale clipping",
+  "cleanup": "obsolete_auditions_removed_selected_and_source_retained",
+  "latest_candidate": "selected",
+  "selected_audio": "output/edge-dialogue-study/selected.wav",
+  "selection": "开头采用已确认清楚版本，后半句采用更清亮、更快版。"
+}

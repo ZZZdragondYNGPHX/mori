@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mori Companion · 戳脸、抓起与落地</title>
+<link rel="stylesheet" href="gesture-preview.css">
+<style>
+main{grid-template-columns:repeat(2,minmax(0,1fr))}.arena{grid-column:1/-1}.arena-body{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(240px,1fr);gap:20px;align-items:center;padding:12px 20px 20px}.arena-stage{border-radius:12px;background:radial-gradient(ellipse at 60% 40%,#294461,#182331 68%);display:flex;justify-content:center;overflow:hidden}#arena{display:block;width:100%;max-width:560px;height:auto;touch-action:none;cursor:grab}#arena:active{cursor:grabbing}.arena-help p{font-size:13px;margin-bottom:14px}.drag-controls{display:flex;flex-wrap:wrap;gap:8px}.drag-controls button{min-height:44px;font-size:13px}.arena-state{color:#f3bec8;font-size:13px;min-height:24px;margin-top:14px}.arena-help a{font-size:12px}.reaction-controls button{min-height:44px}.reaction-controls select{min-height:44px}.stage.checker{background:repeating-conic-gradient(#233145 0% 25%,#1c283a 0% 50%) 50%/20px 20px}
+@media(max-width:760px){.arena-body{grid-template-columns:1fr}.arena-help{padding:0 4px}.hint{margin:0}}@media(max-width:560px){main{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+<div class="brand">MORI COMPANION / 茉伴</div>
+<div class="intro"><div><h1>戳脸、抓起与软软落地</h1><p>眨一下眼，偷偷捂脸；被提起来时，大尾巴慢半拍。<br>拖动角色，或用方向按钮体验惯性与松手后的收尾。</p></div><span class="batch">第二批 · 16 张关键姿势</span></div>
+<div class="toolbar" aria-label="预览播放控制">
+<button id="play" aria-pressed="true">暂停</button><button id="step">下一帧</button>
+<label>速度<select id="speed"><option value=".5">0.5× 慢放</option><option value="1" selected>1× 正常</option><option value="1.5">1.5×</option></select></label>
+<button id="background" aria-pressed="false">透明网格</button><span class="hint">左右脸分别回应 · 松手后屈膝缓冲、整理裙摆</span>
+</div><p id="status" class="reduced" aria-live="polite"></p>
+</header>
+<main>
+<section class="card arena">
+<div class="card-head"><h2>抓起来，轻轻晃一晃</h2><span class="view">拖动试验台</span></div>
+<div class="arena-body"><div class="arena-stage"><canvas id="arena" width="560" height="340" role="img" aria-label="可拖动的 Mori：也可使用旁边的方向按钮"></canvas></div>
+<div class="arena-help"><p>在角色上按住拖动，试试缓慢移动、快速换方向，再松手。身体随速度轻摆，停下后会逐渐回正。</p>
+<div class="drag-controls"><button data-drag="left">向左拖</button><button data-drag="right">向右拖</button><button data-drag="up">向上提</button><button data-drag="down">向下放</button><button id="release">松手落地</button><button id="reset">回到中间</button></div>
+<div id="arena-state" class="arena-state" aria-live="polite">站好啦，等你来玩</div><a href="motion-preview.html">回看第一批四向步态与摸头／尾巴反应</a></div></div>
+</section>
+<div id="cards" style="display:contents"></div>
+</main>
+<footer><p>左右戳脸各有轻度、亲近、害羞 3 个层级，每层 2 种变化。连续互动递进，安静 12 秒后恢复。抓起与落地各有 4 张姿势，拖动速度决定悬空姿态，并保留换向惯性。</p>
+<p>桌宠专注模式也保留这些主动互动，结束后恢复最新工作状态。<a href="../output/gesture-study-v2/prompts.json">本批原画与生图提示词</a> · <a href="../src/asset_library/motion/clips.json">运行时动作清单</a></p></footer>
+<script src="gesture-preview-data.js"></script><script src="gesture-preview.js"></script>
+</body>
+</html>

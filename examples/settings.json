@@ -1,0 +1,14 @@
+{
+  "enabled_adapters": ["codex"],
+  "interactions": {
+    "mode": "focus",
+    "walking": true,
+    "window_play": true,
+    "cursor_play": true,
+    "dialogue": true,
+    "minimize_pranks": false,
+    "interval_seconds": 15,
+    "minimize_interval_seconds": 180,
+    "excluded_apps": []
+  }
+}

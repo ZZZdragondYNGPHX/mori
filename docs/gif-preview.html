@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mori Companion · 九种 GIF 动作</title>
+<style>
+:root{color-scheme:light dark;font-family:system-ui,sans-serif;background:#151922;color:#e9edf8}
+body{max-width:920px;margin:40px auto;padding:0 20px}h1{font-size:26px}p{color:#b6bed2;line-height:1.7}
+main{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+figure{margin:0;border:1px solid #3b4357;border-radius:16px;padding:20px;background:#242a38;display:flex;align-items:center;flex-direction:column;gap:14px}
+.image{height:230px;display:flex;align-items:center;justify-content:center;width:100%;background:repeating-conic-gradient(#333b4e 0% 25%,#2b3242 0% 50%) 50%/20px 20px;border-radius:10px}
+img{max-width:100%;image-rendering:auto}figcaption{font-weight:600}small{color:#b6bed2}a{color:#b5c8ff}
+</style>
+<h1>Mori Companion · 九种 GIF 动作</h1>
+<p>九种默认动作各有四张独立关键姿势，统一圆蓝眼、腮红、渐变长发和超大鲸鱼尾巴。每个 GIF 均为 280×230 透明画布，按动作节奏停留；桌宠播放时另外加入短暂平滑过渡。<a href="life-preview.html">进入第五批预览</a>，可以逐帧查看、切换工作表情和试验窗沿空间。</p>
+<main>
+<figure><div class="image"><img src="../src/asset_library/move/idle/nothing/nothing.gif" alt="待机呼吸"></div><figcaption>待机 · 呼吸</figcaption><small>idle</small></figure>
+<figure><div class="image"><img src="../src/asset_library/move/idle/think/think.gif" alt="托腮思考"></div><figcaption>思考 · 托腮与小小灵感</figcaption><small>task_started / thinking</small></figure>
+<figure><div class="image"><img src="../src/asset_library/move/idle/eat/eat.gif" alt="工作时进食点头"></div><figcaption>工作 · 进食点头</figcaption><small>generating</small></figure>
+<figure><div class="image"><img src="../src/asset_library/move/attention/attention.gif" alt="招手等待确认"></div><figcaption>等待确认 · 招手提醒</figcaption><small>waiting_input</small></figure>
+<figure><div class="image"><img src="../src/asset_library/move/cheerup/cheerup.gif" alt="成功庆祝"></div><figcaption>完成 / 登场 · 开心庆祝</figcaption><small>task_completed / entrance</small></figure>
+<figure><div class="image"><img src="../src/asset_library/move/file/wrong/wrong.gif" alt="担心后亲近地安慰"></div><figcaption>失败 · 亲近地安慰</figcaption><small>task_failed / import failed</small></figure>
+<figure><div class="image"><img src="../src/asset_library/move/touch/touch.gif" alt="害羞的触摸回应"></div><figcaption>触摸 · 害羞回应</figcaption><small>mouse click</small></figure>
+<figure><div class="image"><img src="../src/asset_library/move/PickUp/pickup.gif" alt="拖拽悬空摆动"></div><figcaption>拖拽 · 悬空摆动</figcaption><small>mouse drag</small></figure>
+<figure><div class="image"><img src="../src/asset_library/move/file/true/true.gif" alt="抱稳收纳的资料"></div><figcaption>收纳成功 · 抱稳资料</figcaption><small>import completed</small></figure>
+</main>
+<p>姿势导出：<a href="../scripts/build_life_assets.py">build_life_assets.py</a>；GIF 重建：<a href="../scripts/build_gifs.py">build_gifs.py</a>；<a href="../output/life-study-v5/prompts.json">内置生图提示词</a>。上一版 GIF 存档于 output/life-study-v5/original-gifs/。运行中的桌宠只解码当前 GIF，隐藏时暂停；单次动作完成后保留恢复姿态。</p>
+</html>

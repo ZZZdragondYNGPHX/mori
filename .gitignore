@@ -1,4 +1,9 @@
 # Byte-compiled / optimized / DLL files
+src/config.json
+src/RAG/
+src/asset_library/API*.txt
+bridge.json
+hooks.json.backup-*
 __pycache__/
 *.py[codz]
 *$py.class
@@ -216,3 +221,11 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Regenerable exports and discarded auditions
+output/tts-scriptbook/
+output/**/inspection/
+output/**/package/
+output/voice-study-*/
+output/kokoro-local-study*/
+output/edge-dialogue-study/cached_*

@@ -1,0 +1,636 @@
+{
+  "schema_version": 1,
+  "canvas": [
+    280,
+    230
+  ],
+  "baseline": 222,
+  "walk_stride_pixels": 56,
+  "walk_sway_degrees": 0.7,
+  "clips": {
+    "walk-left": {
+      "family": "walk-left",
+      "durations": [
+        180,
+        180,
+        180,
+        180
+      ],
+      "loop": true,
+      "frames": [
+        "walk-left-0.png",
+        "walk-left-1.png",
+        "walk-left-2.png",
+        "walk-left-3.png"
+      ]
+    },
+    "walk-right": {
+      "family": "walk-right",
+      "durations": [
+        180,
+        180,
+        180,
+        180
+      ],
+      "loop": true,
+      "frames": [
+        "walk-right-0.png",
+        "walk-right-1.png",
+        "walk-right-2.png",
+        "walk-right-3.png"
+      ]
+    },
+    "walk-up": {
+      "family": "walk-up",
+      "durations": [
+        180,
+        180,
+        180,
+        180
+      ],
+      "loop": true,
+      "frames": [
+        "walk-up-0.png",
+        "walk-up-1.png",
+        "walk-up-2.png",
+        "walk-up-3.png"
+      ]
+    },
+    "walk-down": {
+      "family": "walk-down",
+      "durations": [
+        180,
+        180,
+        180,
+        180
+      ],
+      "loop": true,
+      "frames": [
+        "walk-down-0.png",
+        "walk-down-1.png",
+        "walk-down-2.png",
+        "walk-down-3.png"
+      ]
+    },
+    "head-1-0": {
+      "family": "head",
+      "durations": [
+        160,
+        500,
+        280
+      ],
+      "loop": false,
+      "frames": [
+        "head-0.png",
+        "head-1.png",
+        "head-0.png"
+      ]
+    },
+    "head-1-1": {
+      "family": "head",
+      "durations": [
+        160,
+        300,
+        300,
+        500,
+        280
+      ],
+      "loop": false,
+      "frames": [
+        "head-0.png",
+        "head-1.png",
+        "head-0.png",
+        "head-1.png",
+        "head-0.png"
+      ]
+    },
+    "head-2-0": {
+      "family": "head",
+      "durations": [
+        160,
+        300,
+        500,
+        280
+      ],
+      "loop": false,
+      "frames": [
+        "head-0.png",
+        "head-1.png",
+        "head-2.png",
+        "head-0.png"
+      ]
+    },
+    "head-2-1": {
+      "family": "head",
+      "durations": [
+        160,
+        300,
+        300,
+        500,
+        280
+      ],
+      "loop": false,
+      "frames": [
+        "head-0.png",
+        "head-1.png",
+        "head-2.png",
+        "head-1.png",
+        "head-0.png"
+      ]
+    },
+    "head-3-0": {
+      "family": "head",
+      "durations": [
+        160,
+        300,
+        300,
+        300,
+        500,
+        280
+      ],
+      "loop": false,
+      "frames": [
+        "head-0.png",
+        "head-1.png",
+        "head-2.png",
+        "head-3.png",
+        "head-2.png",
+        "head-0.png"
+      ]
+    },
+    "head-3-1": {
+      "family": "head",
+      "durations": [
+        160,
+        300,
+        300,
+        300,
+        500,
+        280
+      ],
+      "loop": false,
+      "frames": [
+        "head-0.png",
+        "head-1.png",
+        "head-3.png",
+        "head-2.png",
+        "head-3.png",
+        "head-0.png"
+      ]
+    },
+    "tail-1-0": {
+      "family": "tail",
+      "durations": [
+        160,
+        500,
+        280
+      ],
+      "loop": false,
+      "frames": [
+        "tail-0.png",
+        "tail-1.png",
+        "tail-0.png"
+      ]
+    },
+    "tail-1-1": {
+      "family": "tail",
+      "durations": [
+        160,
+        300,
+        300,
+        500,
+        280
+      ],
+      "loop": false,
+      "frames": [
+        "tail-0.png",
+        "tail-1.png",
+        "tail-0.png",
+        "tail-1.png",
+        "tail-0.png"
+      ]
+    },
+    "tail-2-0": {
+      "family": "tail",
+      "durations": [
+        160,
+        300,
+        500,
+        280
+      ],
+      "loop": false,
+      "frames": [
+        "tail-0.png",
+        "tail-1.png",
+        "tail-2.png",
+        "tail-0.png"
+      ]
+    },
+    "tail-2-1": {
+      "family": "tail",
+      "durations": [
+        160,
+        300,
+        300,
+        500,
+        280
+      ],
+      "loop": false,
+      "frames": [
+        "tail-0.png",
+        "tail-1.png",
+        "tail-2.png",
+        "tail-1.png",
+        "tail-0.png"
+      ]
+    },
+    "tail-3-0": {
+      "family": "tail",
+      "durations": [
+        160,
+        300,
+        300,
+        300,
+        500,
+        280
+      ],
+      "loop": false,
+      "frames": [
+        "tail-0.png",
+        "tail-1.png",
+        "tail-2.png",
+        "tail-3.png",
+        "tail-2.png",
+        "tail-0.png"
+      ]
+    },
+    "tail-3-1": {
+      "family": "tail",
+      "durations": [
+        160,
+        300,
+        300,
+        300,
+        500,
+        280
+      ],
+      "loop": false,
+      "frames": [
+        "tail-0.png",
+        "tail-1.png",
+        "tail-3.png",
+        "tail-2.png",
+        "tail-3.png",
+        "tail-0.png"
+      ]
+    },
+    "cheek-left-1-0": {
+      "family": "cheek-left",
+      "durations": [
+        100,
+        420,
+        260
+      ],
+      "loop": false,
+      "frames": [
+        "cheek-left-0.png",
+        "cheek-left-1.png",
+        "cheek-left-0.png"
+      ]
+    },
+    "cheek-left-1-1": {
+      "family": "cheek-left",
+      "durations": [
+        100,
+        240,
+        240,
+        420,
+        260
+      ],
+      "loop": false,
+      "frames": [
+        "cheek-left-0.png",
+        "cheek-left-1.png",
+        "cheek-left-0.png",
+        "cheek-left-1.png",
+        "cheek-left-0.png"
+      ]
+    },
+    "cheek-left-2-0": {
+      "family": "cheek-left",
+      "durations": [
+        100,
+        240,
+        420,
+        260
+      ],
+      "loop": false,
+      "frames": [
+        "cheek-left-0.png",
+        "cheek-left-1.png",
+        "cheek-left-2.png",
+        "cheek-left-0.png"
+      ]
+    },
+    "cheek-left-2-1": {
+      "family": "cheek-left",
+      "durations": [
+        100,
+        240,
+        240,
+        420,
+        260
+      ],
+      "loop": false,
+      "frames": [
+        "cheek-left-0.png",
+        "cheek-left-1.png",
+        "cheek-left-2.png",
+        "cheek-left-1.png",
+        "cheek-left-0.png"
+      ]
+    },
+    "cheek-left-3-0": {
+      "family": "cheek-left",
+      "durations": [
+        100,
+        240,
+        240,
+        240,
+        420,
+        260
+      ],
+      "loop": false,
+      "frames": [
+        "cheek-left-0.png",
+        "cheek-left-1.png",
+        "cheek-left-2.png",
+        "cheek-left-3.png",
+        "cheek-left-2.png",
+        "cheek-left-0.png"
+      ]
+    },
+    "cheek-left-3-1": {
+      "family": "cheek-left",
+      "durations": [
+        100,
+        240,
+        240,
+        240,
+        420,
+        260
+      ],
+      "loop": false,
+      "frames": [
+        "cheek-left-0.png",
+        "cheek-left-1.png",
+        "cheek-left-3.png",
+        "cheek-left-2.png",
+        "cheek-left-3.png",
+        "cheek-left-0.png"
+      ]
+    },
+    "cheek-right-1-0": {
+      "family": "cheek-right",
+      "durations": [
+        100,
+        420,
+        260
+      ],
+      "loop": false,
+      "frames": [
+        "cheek-right-0.png",
+        "cheek-right-1.png",
+        "cheek-right-0.png"
+      ]
+    },
+    "cheek-right-1-1": {
+      "family": "cheek-right",
+      "durations": [
+        100,
+        240,
+        240,
+        420,
+        260
+      ],
+      "loop": false,
+      "frames": [
+        "cheek-right-0.png",
+        "cheek-right-1.png",
+        "cheek-right-0.png",
+        "cheek-right-1.png",
+        "cheek-right-0.png"
+      ]
+    },
+    "cheek-right-2-0": {
+      "family": "cheek-right",
+      "durations": [
+        100,
+        240,
+        420,
+        260
+      ],
+      "loop": false,
+      "frames": [
+        "cheek-right-0.png",
+        "cheek-right-1.png",
+        "cheek-right-2.png",
+        "cheek-right-0.png"
+      ]
+    },
+    "cheek-right-2-1": {
+      "family": "cheek-right",
+      "durations": [
+        100,
+        240,
+        240,
+        420,
+        260
+      ],
+      "loop": false,
+      "frames": [
+        "cheek-right-0.png",
+        "cheek-right-1.png",
+        "cheek-right-2.png",
+        "cheek-right-1.png",
+        "cheek-right-0.png"
+      ]
+    },
+    "cheek-right-3-0": {
+      "family": "cheek-right",
+      "durations": [
+        100,
+        240,
+        240,
+        240,
+        420,
+        260
+      ],
+      "loop": false,
+      "frames": [
+        "cheek-right-0.png",
+        "cheek-right-1.png",
+        "cheek-right-2.png",
+        "cheek-right-3.png",
+        "cheek-right-2.png",
+        "cheek-right-0.png"
+      ]
+    },
+    "cheek-right-3-1": {
+      "family": "cheek-right",
+      "durations": [
+        100,
+        240,
+        240,
+        240,
+        420,
+        260
+      ],
+      "loop": false,
+      "frames": [
+        "cheek-right-0.png",
+        "cheek-right-1.png",
+        "cheek-right-3.png",
+        "cheek-right-2.png",
+        "cheek-right-3.png",
+        "cheek-right-0.png"
+      ]
+    },
+    "pickup": {
+      "family": "pickup",
+      "durations": [
+        180,
+        300,
+        300,
+        300
+      ],
+      "loop": true,
+      "frames": [
+        "pickup-0.png",
+        "pickup-1.png",
+        "pickup-2.png",
+        "pickup-3.png"
+      ]
+    },
+    "landing": {
+      "family": "landing",
+      "durations": [
+        120,
+        180,
+        460,
+        260
+      ],
+      "loop": false,
+      "frames": [
+        "landing-0.png",
+        "landing-1.png",
+        "landing-2.png",
+        "landing-3.png"
+      ]
+    },
+    "mouse-look": {
+      "family": "mouse-look",
+      "durations": [
+        600,
+        600,
+        600,
+        600
+      ],
+      "loop": true,
+      "frames": [
+        "mouse-look-0.png",
+        "mouse-look-1.png",
+        "mouse-look-2.png",
+        "mouse-look-3.png"
+      ]
+    },
+    "mouse-curious": {
+      "family": "mouse-curious",
+      "durations": [
+        160,
+        320,
+        520,
+        360
+      ],
+      "loop": false,
+      "frames": [
+        "mouse-curious-0.png",
+        "mouse-curious-1.png",
+        "mouse-curious-2.png",
+        "mouse-curious-3.png"
+      ]
+    },
+    "mouse-shy": {
+      "family": "mouse-shy",
+      "durations": [
+        120,
+        260,
+        520,
+        360
+      ],
+      "loop": false,
+      "frames": [
+        "mouse-shy-0.png",
+        "mouse-shy-1.png",
+        "mouse-shy-2.png",
+        "mouse-shy-3.png"
+      ]
+    },
+    "mouse-settle": {
+      "family": "mouse-curious",
+      "durations": [
+        600,
+        500
+      ],
+      "loop": false,
+      "frames": [
+        "mouse-curious-3.png",
+        "mouse-curious-0.png"
+      ]
+    },
+    "mouse-curious-left": {
+      "family": "mouse-curious-left",
+      "durations": [
+        160,
+        320,
+        520,
+        360
+      ],
+      "loop": false,
+      "frames": [
+        "mouse-curious-left-0.png",
+        "mouse-curious-left-1.png",
+        "mouse-curious-left-2.png",
+        "mouse-curious-left-3.png"
+      ]
+    },
+    "mouse-shy-left": {
+      "family": "mouse-shy-left",
+      "durations": [
+        120,
+        260,
+        520,
+        360
+      ],
+      "loop": false,
+      "frames": [
+        "mouse-shy-left-0.png",
+        "mouse-shy-left-1.png",
+        "mouse-shy-left-2.png",
+        "mouse-shy-left-3.png"
+      ]
+    },
+    "mouse-settle-left": {
+      "family": "mouse-curious-left",
+      "durations": [
+        600,
+        500
+      ],
+      "loop": false,
+      "frames": [
+        "mouse-curious-left-3.png",
+        "mouse-curious-left-0.png"
+      ]
+    }
+  }
+}

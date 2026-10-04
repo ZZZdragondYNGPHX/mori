@@ -1,0 +1,56 @@
+{
+  "status": "base_voice_accepted_script_revised",
+  "language": "zh-CN",
+  "provider": "Microsoft Edge online TTS via edge-tts",
+  "voice": "zh-CN-XiaoyiNeural",
+  "limitation": "沿用用户接受的基础中文女声。此接口可调整语速、音高和停顿，不支持人设提示词或显式情绪控制。",
+  "persona_source": "src/character/prompts/mori.md",
+  "persona": "Mori／茉伴／小鲸鱼是桌面上的朋友。聪明、反应快，傲娇嘴硬，心软藏着。说话短、口语、随口，不用客服腔，不主动表演女仆腔，不每句撒娇或安慰，不频繁挂哦、啦、呢、波浪号。重要提醒先说明发生了什么或需要用户做什么，再允许一点自然的小得意。",
+  "sequence": "system_cue_then_180ms_silence_then_voice",
+  "sample_rate": 24000,
+  "channels": 1,
+  "cue_source_directory": "/usr/share/sounds/ocean/stereo",
+  "cue_attribution": "Ocean sound theme; Copyright 2023 Guilherme Marçal Silva; CC-BY-SA-4.0. 提示音经过响度、采样率及淡出处理，衍生提示音遵循同一许可。",
+  "cue_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "clips": [
+    {
+      "id": "waiting_input",
+      "priority": "important",
+      "animation": "敲黑板／等待选择",
+      "trigger": "进入需要用户作出决定的等待状态；动画循环不触发播放",
+      "cue_source": "dialog-information.oga",
+      "direction": "像朋友叫你看一眼，直白清楚，语气自然，不撒娇、不责备。",
+      "text": "这儿得你选一下",
+      "segments": [
+        {"text": "这儿得你选一下。", "rate": "+1%", "pitch": "+8Hz", "pause_after_ms": 0}
+      ]
+    },
+    {
+      "id": "task_failed",
+      "priority": "important",
+      "animation": "任务失败／安慰",
+      "trigger": "确认任务失败；用户主动中断不触发播放",
+      "cue_source": "completion-fail.oga",
+      "direction": "声音稍放低、放慢，认真叫用户来看问题，不戏剧化、不强行安慰、不推卸责任。",
+      "text": "出错了，过来看下",
+      "segments": [
+        {"text": "出错了，过来看下。", "rate": "-3%", "pitch": "+5Hz", "pause_after_ms": 0}
+      ]
+    },
+    {
+      "id": "task_completed",
+      "priority": "important",
+      "animation": "任务完成／庆祝",
+      "trigger": "任务完成时播放一次；日常自主庆祝不触发播放",
+      "cue_source": "completion-success.oga",
+      "direction": "搞定说得利落，短停一下，后半句随口露出一点得意，不刻意嘿嘿、不索要夸奖。",
+      "text": "搞定，还得是我",
+      "segments": [
+        {"text": "搞定。", "rate": "+3%", "pitch": "+10Hz", "pause_after_ms": 100},
+        {"text": "还得是我。", "rate": "+5%", "pitch": "+12Hz", "pause_after_ms": 0}
+      ]
+    }
+  ],
+  "next_batch": ["并行任务待回答提醒", "后台新消息提醒"],
+  "silent_animations": ["日常自主庆祝", "呼吸", "散步", "吃饭", "探头", "日常碎碎念"]
+}

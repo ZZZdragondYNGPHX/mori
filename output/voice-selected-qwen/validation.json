@@ -1,0 +1,11 @@
+{
+  "checks": [
+    "selected_completion_byte_identical_to_B",
+    "24kHz_mono_PCM16_non_silent_no_full_scale_clipping",
+    "cue_180ms_voice_sequence_verified",
+    "pending_manifest_paths_valid",
+    "edge_script_syntax_valid"
+  ],
+  "completion_seconds": 3.563,
+  "remaining_clips": "deferred_to_new_conversation_by_user"
+}

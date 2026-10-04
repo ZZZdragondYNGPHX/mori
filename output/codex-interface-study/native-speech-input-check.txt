@@ -1,0 +1,1 @@
+PASS: native circular mask; clicks pass through initially and at corners; continuous 3s hover enables clicks; exit restores pass-through; native ID/geometry/focus stable

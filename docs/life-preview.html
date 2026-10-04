@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mori Companion · 偷看与安静陪伴</title>
+<link rel="stylesheet" href="gesture-preview.css">
+<link rel="icon" type="image/png" href="../src/asset_library/motion/base-nothing-0.png">
+<style>
+.arena{grid-column:1/-1}.arena-stage{margin:16px 20px 0;border-radius:12px;background:radial-gradient(ellipse at 65% 40%,#294259,#182331 75%)}#arena{display:block;width:100%;height:auto;max-width:1000px;margin:auto;touch-action:none}.arena-help{padding:16px 20px 20px}.arena-help p{font-size:13px}.scene-controls{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}.scene-controls button,.reaction-controls button,.toolbar button,.toolbar select{min-height:44px}.state{min-height:24px;color:#f3bec8;font-size:13px;margin-top:12px}.reaction-controls{flex-wrap:wrap}.stage{height:250px}.links,.spaces{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px;font-size:12px}.spaces span{border:1px solid #446476;border-radius:20px;padding:5px 9px;color:#a2e0e7}.spaces span.blocked{border-color:#6b4857;color:#e3acbd}button:disabled{opacity:.5;cursor:default}button:disabled:active{transform:none}.view{white-space:nowrap}
+</style>
+</head>
+<body>
+<header>
+<div class="brand">MORI COMPANION / 茉伴</div>
+<div class="intro"><div><h1>偷偷看，也安静陪你</h1><p>趴在窗沿托腮，等你忙完再伸个懒腰。<br>四张真实姿势，轻轻接住每一次动作变化。</p></div><span class="batch">第五批 · 40 张新姿势</span></div>
+<p>本页保留第五批原画预览。最新的分模式模块开关、散步／小跑／快跑、长时间休息与全身朝向已接入桌宠，详见 <a href="animation-modules.md">模块与动画节奏</a>；在「互动设置」中体验。</p>
+<div class="toolbar" aria-label="播放控制"><button id="play" aria-pressed="true">暂停</button><button id="step">下一帧</button><label>速度<select id="speed"><option value=".5">0.5× 慢放</option><option value="1" selected>1× 正常</option><option value="1.5">1.5×</option></select></label><button id="smooth" aria-pressed="true">柔和过渡：开</button><button id="background" aria-pressed="false">透明网格</button></div>
+<p id="status" class="reduced" aria-live="polite"></p>
+</header>
+<main>
+<section class="card arena"><div class="card-head"><h2>窗沿的小试验台</h2><span class="view">完整轮廓放得下，才开始互动</span></div>
+<div class="arena-stage"><canvas id="arena" width="1000" height="720" role="img" aria-label="Mori 与示意窗口互动；下方按钮可选择动作和测试窗口边缘空间"></canvas></div>
+<div class="arena-help"><p>拖动标题栏或右下角，改变示意窗口的位置和大小。试试把窗口贴到屏幕右侧，再点“右侧探头”：空间不足时，她会留在原地。这里的按钮只演示动作，不操作真实软件。</p>
+<div id="spaces" class="spaces" aria-live="polite"></div>
+<div class="scene-controls"><button data-story="left">左侧探头</button><button data-story="right">右侧探头</button><button data-story="top">趴在上沿偷看</button><button data-story="sit">坐下、晃腿、起身</button><button data-story="press">伸手碰按钮</button><button data-story="stretch">伸个懒腰</button><button data-story="nap">打个小盹</button></div>
+<div class="scene-controls"><button id="edge">窗口贴右侧</button><button id="narrow">缩成小窗口</button><button id="high">移到屏幕顶部</button><button id="reset">恢复宽敞位置</button><button id="stop">停下来</button><button id="mode" aria-pressed="false">切到专注模式</button></div>
+<div class="scene-controls" aria-label="工作状态"><button data-base="nothing">安静待机</button><button data-base="think">思考</button><button data-base="eat">正在生成</button><button data-base="attention">等待回应</button><button data-base="cheerup">成功庆祝</button><button data-base="wrong">失败安慰</button><button data-base="true">资料收好</button></div>
+<div id="arena-state" class="state" aria-live="polite">有空位啦，选一个小动作看看吧</div><div class="links"><a href="motion-preview.html">四向步态与触摸</a><a href="gesture-preview.html">戳脸与拖拽</a><a href="mouse-preview.html">鼠标互动</a><a href="window-preview.html">窗沿原画</a></div></div>
+</section>
+<div id="cards" style="display:contents"></div>
+</main>
+<footer><p>左右探头与上沿偷看分别使用独立原画。窗口互动检查全部姿势的可见轮廓、屏幕可用空间，以及窗沿长度；移动后放不下就结束动作。不会把身体压到屏幕里面凑位置。</p><p>旧九类基础动作使用四张独立姿势。专注待机以呼吸、眨眼为主；打盹和伸懒腰只在娱乐模式播放，并让位于工作。过渡可以中途打断，完成后停止额外计时。<a href="../output/life-study-v5/prompts.json">内置生图原画与提示词</a> · <a href="../src/asset_library/motion/clips.json">运行素材清单</a></p></footer>
+<script src="life-preview-data.js"></script><script src="life-preview.js"></script>
+</body>
+</html>

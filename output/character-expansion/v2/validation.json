@@ -1,0 +1,95 @@
+{
+  "status": "character-review-drafts",
+  "notes": [
+    "Four source PNGs copied unchanged; no resizing, cropping or alpha editing.",
+    "Alpha transparency and visible silhouette margins verified.",
+    "Visual inspection: large dark-blue whale tail, large head/small body, gradient long blue hair, blue eyes, white maid headpiece, dark-blue/white dress and blue bow are present.",
+    "User character approval pending; these files are not runtime animation assets."
+  ],
+  "checks": [
+    {
+      "id": "walk-right",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "transparent_pixels": 907394,
+      "visible_bounds_alpha_128": [
+        68,
+        23,
+        1324,
+        1000
+      ],
+      "bytes": 1644479,
+      "sha256": "8f1eb3d79d9a577765a562df9798d582a55b8857eb198fe2ae71d50715debbb8"
+    },
+    {
+      "id": "press-button",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "transparent_pixels": 855648,
+      "visible_bounds_alpha_128": [
+        62,
+        18,
+        1403,
+        1010
+      ],
+      "bytes": 1688586,
+      "sha256": "5c6641fb703368241d66fba2f2a56ca209f94b9bb0a39c9eaa6159b91cd1fe76"
+    },
+    {
+      "id": "sit-swing",
+      "size": [
+        1374,
+        1145
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_pixels": 890467,
+      "visible_bounds_alpha_128": [
+        49,
+        101,
+        1321,
+        1102
+      ],
+      "bytes": 1100658,
+      "sha256": "02d65fbcc0d2b819f23dd43bc3a7d9afec55396edc3ef3a237f72a4a52cf79e6"
+    },
+    {
+      "id": "peek",
+      "size": [
+        1379,
+        1141
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "transparent_pixels": 948180,
+      "visible_bounds_alpha_128": [
+        86,
+        135,
+        1308,
+        1045
+      ],
+      "bytes": 1027860,
+      "sha256": "e8a34d043b2b64144986dee95e64c1c46926519bcdb3e15c0fafdea0509056c6"
+    }
+  ]
+}

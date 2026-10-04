@@ -1,0 +1,12 @@
+{
+  "checks": [
+    "selected_opening_byte_identical_to_approved_clear_version",
+    "ending_uses_bright_fast_parameters",
+    "selected_audio_valid_mono_24kHz_PCM16_non_silent_no_full_scale_clipping",
+    "qwen_B_byte_identical_and_cue_sequence_valid",
+    "deferred_qwen_sources_self_contained",
+    "modified_scripts_syntax_valid"
+  ],
+  "selected_audio_seconds": 2.305,
+  "online_latency_verified": false
+}

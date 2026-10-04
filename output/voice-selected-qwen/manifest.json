@@ -1,0 +1,76 @@
+{
+  "status": "selected_completion_available_other_clips_pending",
+  "language": "zh-CN",
+  "provider": "Qwen3-TTS local CUDA inference",
+  "voice": "bright_young",
+  "limitation": "完成提示沿用用户选中的B原文件。其余两条待生成；VoiceDesign提示词相同不能保证声线完全一致。",
+  "persona_source": "src/character/prompts/mori.md",
+  "persona": "Mori／茉伴／小鲸鱼是桌面上的朋友。聪明、反应快，傲娇嘴硬，心软藏着。说话短、口语、随口，不用客服腔，不主动表演女仆腔，不每句撒娇或安慰，不频繁挂哦、啦、呢、波浪号。重要提醒先说明发生了什么或需要用户做什么，再允许一点自然的小得意。",
+  "sequence": "system_cue_then_180ms_silence_then_voice",
+  "sample_rate": 24000,
+  "channels": 1,
+  "cue_source_directory": "source-cues",
+  "cue_attribution": "Ocean sound theme; Copyright 2023 Guilherme Marçal Silva; CC-BY-SA-4.0. 提示音经过响度、采样率及淡出处理，衍生提示音遵循同一许可。",
+  "cue_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "clips": [
+    {
+      "id": "waiting_input",
+      "priority": "important",
+      "animation": "敲黑板／等待选择",
+      "trigger": "进入需要用户作出决定的等待状态；动画循环不触发播放",
+      "cue_source": "waiting_input.wav",
+      "direction": "像朋友叫你看一眼，直白清楚，语气自然，不撒娇、不责备。",
+      "text": "这儿得你选一下",
+      "seed": 20261004,
+      "candidate_label": "清亮灵动",
+      "instruct": "清亮灵动的二次元少女女声，声线细、轻、纯净，音调偏高，带一点天真俏皮的萝莉感。普通话口语自然，咬字轻巧，音节衔接流畅，整句话有连贯起伏。像熟悉的朋友叫你看一眼，清楚利落地提醒你做选择，语气轻快、自然。",
+      "audio_status": "deferred_to_new_conversation_by_user"
+    },
+    {
+      "id": "task_failed",
+      "priority": "important",
+      "animation": "任务失败／安慰",
+      "trigger": "确认任务失败；用户主动中断不触发播放",
+      "cue_source": "task_failed.wav",
+      "direction": "声音稍放低、放慢，认真叫用户来看问题，不戏剧化、不强行安慰、不推卸责任。",
+      "text": "出错了，过来看下",
+      "seed": 20261004,
+      "candidate_label": "清亮灵动",
+      "instruct": "清亮灵动的二次元少女女声，声线细、轻、纯净，音调偏高，带一点天真俏皮的萝莉感。普通话口语自然，咬字轻巧，音节衔接流畅，整句话有连贯起伏。保持少女声线，语气认真、稍带担心，清楚地说出出错了，随后自然叫你来看问题。",
+      "audio_status": "deferred_to_new_conversation_by_user"
+    },
+    {
+      "id": "task_completed",
+      "priority": "important",
+      "animation": "任务完成／庆祝",
+      "trigger": "任务完成时播放一次；日常自主庆祝不触发播放",
+      "cue_source": "task_completed.wav",
+      "direction": "搞定说得利落，短停一下，后半句随口露出一点得意，不刻意嘿嘿、不索要夸奖。",
+      "text": "搞定，还得是我",
+      "seed": 20261004,
+      "candidate_label": "清亮灵动",
+      "instruct": "清亮灵动的二次元少女女声，声线细、轻、纯净，音调偏高，带一点天真俏皮的萝莉感。普通话口语自然，咬字轻巧，音节衔接流畅，整句话有连贯起伏。轻快地说搞定，后半句带一点笑意和自信的小得意，语气像熟悉的朋友。",
+      "audio_status": "available_user_selected"
+    }
+  ],
+  "next_batch": [
+    "并行任务待回答提醒",
+    "后台新消息提醒"
+  ],
+  "silent_animations": [
+    "日常自主庆祝",
+    "呼吸",
+    "散步",
+    "吃饭",
+    "探头",
+    "日常碎碎念"
+  ],
+  "model": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+  "model_revision": "5ecdb67327fd37bb2e042aab12ff7391903235d3",
+  "generation_mode": "voice_design",
+  "listening_status": "completion_selected_other_clips_pending",
+  "selected_clip": "bright_young",
+  "user_feedback": "选择B：清亮灵动，偏少女感。",
+  "remaining_work": "用户要求Qwen补全对话语音留到新对话进行，本次不生成。",
+  "provenance": "用户从VoiceDesign两条试听中选择bright_young；完成提示原文件已复制保留。"
+}

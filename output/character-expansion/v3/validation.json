@@ -1,0 +1,24 @@
+{
+  "status": "expression-calibration-draft",
+  "size": [
+    1378,
+    1141
+  ],
+  "mode": "RGBA",
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "visible_bounds_alpha_128": [
+    69,
+    131,
+    1329,
+    1088
+  ],
+  "bytes": 1128187,
+  "notes": [
+    "Source PNG copied unchanged; no image postprocessing.",
+    "New face uses rounded blue eyes, simple eye highlights, pink cheeks and an open happy mouth from 12345.jpg.",
+    "Other action poses remain in v2 pending expression feedback."
+  ]
+}

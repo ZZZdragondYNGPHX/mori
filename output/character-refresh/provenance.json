@@ -1,0 +1,47 @@
+{
+  "nothing": {
+    "source_sha256": "928bc6470fbf4fbcec8e01ba27780610fcee1c67bbeb46acf2e43a71702ac9e3",
+    "original_sha256": "3fa83df113fd2e85d94329166158ddbc17adfabb546bf0277249d9e996f2d349",
+    "runtime_png_sha256": "d5795c78ce94b6359f00259daaf0e326b55a259df2bb2ad91889df452da5b541"
+  },
+  "eat": {
+    "source_sha256": "dfdcd302268161e084276f84756ea386871987f82b112f1c9adb7dbb0c0c43db",
+    "original_sha256": "5e146281263759633b381dab50720f2ad405d3abe421db6034bee8781e22adfa",
+    "runtime_png_sha256": "fa2c64148b38484ebc7d0a63625bfe06791a882c9e7db61f41d27c1ee5f0c11f"
+  },
+  "think": {
+    "source_sha256": "06f16ed52fa96ce725e70c0e5dc7cbef01c4cedb710e2738d6a3dc1413bf8e74",
+    "original_sha256": "5f3aa8963316891b74ac02e3a6066bea1ff62f77fb8e8ed80db5ec37bacef80f",
+    "runtime_png_sha256": "d3087a4dd3c933a43304aa6da711914f4e06208b2912d4c0c16ac6e6257500ba"
+  },
+  "attention": {
+    "source_sha256": "5bfdde18e4d85fa38a8b0988b4ab5c698c70196cf04fd25da64049eb88b7db7b",
+    "original_sha256": "d971efd85e3df098741ea0c5bcc8ecc28ad2faaf86418b7bdc45d2e2b9783bf9",
+    "runtime_png_sha256": "bff530bf535b43c2786824a9d127afbae32bb350724dc5e95d3b33134695eba6"
+  },
+  "cheerup": {
+    "source_sha256": "c5106b1cc9a307b66944cb16eee40c5e97c300c6064a5c7cb1b536f0b8dd2a29",
+    "original_sha256": "6e7ad96a4e65f90fb950a52959897c71fd15a139248fb5e5138f620cd69e03b9",
+    "runtime_png_sha256": "b007753d619f613cdc99105858fa5d6ba390a38e7d39a12b8346ec4d3b389d6e"
+  },
+  "wrong": {
+    "source_sha256": "0e6283fd33bd42f316c02099d1fc0b7f17b752e002805012bd6ebc841f017946",
+    "original_sha256": "ca3099856a603842ee87929fdd956273afab5c029e2450ac777d34acce79dc05",
+    "runtime_png_sha256": "9d1bf1ae4d1473adc3170d21ef1bca8d2ef475452769bb1dbbed414f5fdc3837"
+  },
+  "touch": {
+    "source_sha256": "a96b8f9c49a9e4e023366c1fd334440314558ec7841c77e6e7c4af867212cee2",
+    "original_sha256": "c81a188c4cfa978b8d6ddaa709641d7b1c7240d42b259a05e6c9430bb0d5d3c5",
+    "runtime_png_sha256": "db9addba6763cdff3a8cb1da0c6ac99e97c2da1c65d42d3e7b201a2edf76e521"
+  },
+  "pickup": {
+    "source_sha256": "5ac7d43f0b93e87aeee022343c618f647db02e037ea7b1da71abaccfdfba8e39",
+    "original_sha256": "c8800eec324addec49c77998ace1608cf80928cb117e8e56ac83770d990eaf24",
+    "runtime_png_sha256": "11bb144e4d34f52afc576f31c45797d6de206831309ca54df4a03f9394a2069a"
+  },
+  "true": {
+    "source_sha256": "1b6d259fa892f4c9472a7399434990897cbedca7daea7016f388ec2f163dd7aa",
+    "original_sha256": "9f5b67cf9c9db9d5d0f56108535a20e5637419bad2f47657e8456d282123b945",
+    "runtime_png_sha256": "c1b4a090fd014d11808947e928892bb33a93d70f871a9cecb30cd709f3d77cca"
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "date": "2026-10-04",
+  "codexVersion": "0.160.0",
+  "scope": "Implemented local Codex CLI streaming integration, notification UI, and explicit Konsole window/tab return; global Codex configuration unchanged.",
+  "isolation": {
+    "network": "Bubblewrap network namespace; only local mock HTTP inference fixture.",
+    "filesystem": "Read-only root; home, temporary storage and workspace redirected to owned temporary paths without changing HOME or CODEX_HOME.",
+    "terminal": "Owned pseudoterminal; no input injected into existing terminals or GUI windows."
+  },
+  "sessionOnlyFeaturesTested": {
+    "default_mode_request_user_input": true,
+    "send_message_to_user_async": true
+  },
+  "passed": [
+    {
+      "case": "Two subscribed clients receive assistant text, task name updates, user-input request and resolution.",
+      "mode": "Plan",
+      "isBlocking": true
+    },
+    {
+      "case": "Observer ignores the input request; owner answers successfully."
+    },
+    {
+      "case": "Observer disconnects during a pending question; owner request stays pending and can be answered."
+    },
+    {
+      "case": "Real CLI connected through a transparent Unix WebSocket relay renders a choice, submits A, receives resolution and displays original assistant text.",
+      "mode": "Default",
+      "isBlocking": false
+    },
+    {
+      "case": "Real CLI receives send_message_to_user_async as agentMessage delivery=async; this fixture has questions=null and phase=final_answer."
+    },
+    {
+      "case": "Two threads hold simultaneous Plan questions; answering A leaves B pending; answering B resolves B."
+    },
+    {
+      "case": "Observer joins after questions are issued and receives pending-request replay for both threads."
+    },
+    {
+      "case": "Production launcher and actual codex-cli 0.160.0 through transparent relay: Default choice captured with isBlocking=false, native owner answered A, resolution captured, full original captured, completed turn captured."
+    },
+    {
+      "case": "Production relay captures original asynchronous text independently of turn completion."
+    },
+    {
+      "case": "Native CLI automatic task naming captured as thread/name/updated; temporary thread_title helper and prefetched history excluded; only one root task emitted.",
+      "nativeTaskTitle": "修复原生接口"
+    },
+    {
+      "case": "Two owned independent native Konsole windows and two tabs: explicit return selects the exact tab and window; actual KWin activation and Konsole currentSession confirmed.",
+      "source": "tests/manual_codex_window_smoke.py"
+    },
+    {
+      "case": "Interactive circular bubble with owned peek window: stable native ID and geometry, zero extra target repaints, desktop focus unchanged.",
+      "source": "tests/manual_bubble_window_smoke.py --interactive"
+    },
+    {
+      "case": "Existing native KWin move/maximize/unmaximize/minimize/restore still succeeds on an owned child window.",
+      "source": "tests/manual_system_smoke.py"
+    },
+    {
+      "case": "Nine notice/protocol state tests and six presentation tests passed; long Unicode original through HTTP v2, reader pinning/unread, pending lifecycle, quiet thinking, visibility levels, explicit return order."
+    },
+    {
+      "case": "Existing nine bridge integration tests and four shell integration tests passed; scoped architecture checks passed; changed Python files pass Ruff."
+    },
+    {
+      "case": "Native circular bounding shape with no rectangular corners; initial clicks reach the owned background; continuous three-second hover unlocks clicks; exit restores pass-through; native ID, geometry and focus unchanged.",
+      "source": "tests/manual_speech_input_smoke.py"
+    },
+    {
+      "case": "Three speech tests and seven task-presentation tests pass, including opacity persistence/live settings, circle/dot mask, continuous dwell and interrupted hover."
+    },
+    {
+      "case": "Breeze reproducer: Qt NoDropShadowWindowHint alone leaves _KDE_NET_WM_SHADOW on a tooltip; pre-polish _KDE_NET_WM_SKIP_SHADOW prevents theme shadow on both daily and Codex bubbles, including after hover and opacity changes.",
+      "source": "tests/manual_speech_input_smoke.py"
+    }
+  ],
+  "observations": [
+    "Native CLI starts a temporary ephemeral thread_title helper for automatic naming; capture the root name update and exclude helper messages.",
+    "phase=final_answer also occurs on asynchronous agentMessage; celebrate only completed turn status.",
+    "isBlocking is authoritative; do not infer blocking from the wording or conversation mode.",
+    "Only serverRequest/resolved clears pending input. Viewing pauses repeats; completion, interruption and disconnection preserve unresolved markers.",
+    "Konsole currentSession can be stale while inactive; return requires KWin activation followed by currentSession confirmation.",
+    "Native Wayland Konsole WINDOWID is not a KWin UUID; locate its MainWindow through winId, then associate using PID and active-window observations.",
+    "The two experimental features were disabled in the installed CLI feature listing; the launcher enables them only for its private backend, honoring explicit command-line overrides.",
+    "app-server proxy did not initialize against a custom Unix listener; the native remote CLI WebSocket transport was verified instead.",
+    "A circular XShape bounding mask does not remove KDE theme shadow tiles. The originally observed live Mori tooltip had _KDE_NET_WM_SHADOW with rectangular margins despite its circular mask and Qt no-shadow hint. Fix sets Breeze shadow opt-out before polishing/window creation."
+  ],
+  "sources": [
+    "https://learn.chatgpt.com/docs/app-server",
+    "https://learn.chatgpt.com/docs/developer-commands",
+    "https://learn.chatgpt.com/docs/hooks",
+    "https://docs.kde.org/trunk_kf6/en/konsole/konsole/scripting.html",
+    "https://develop.kde.org/docs/plasma/kwin/api/",
+    "https://raw.githubusercontent.com/KDE/konsole/master/src/ViewManager.cpp",
+    "https://raw.githubusercontent.com/KDE/breeze/master/kstyle/breezeshadowhelper.cpp",
+    "https://raw.githubusercontent.com/KDE/breeze/master/kstyle/breezepropertynames.cpp"
+  ],
+  "probeSource": "probe.py (research fixture); production_probe.py (isolated production launcher fixture, uses the documented temporary Bubblewrap mounts)",
+  "evidence": [
+    "native-events.json",
+    "concurrent-events.json",
+    "production-notices.json",
+    "ui-preview.png",
+    "native-window-check.txt",
+    "native-system-check.txt",
+    "native-speech-input-check.txt",
+    "native-speech-shadow-check.txt"
+  ],
+  "implementedTopology": "Owned private app-server <-> byte-preserving Unix WebSocket tee <-> original native remote TUI. Tee decodes copies on an independent queue and delivers provider-neutral schema-v2 notices to local Mori. No extra observer client, request responses, protocol modifications or remote model calls from Mori.",
+  "limitations": [
+    "Tested CLI version 0.160.0; experimental protocol may change.",
+    "Full text capture applies to a newly launched or resumed session through mori-codex / the installed interactive codex function; existing running Codex sessions cannot be retroactively connected.",
+    "Exact window/tab tracking and explicit return verified on KDE Plasma 6 + Konsole + qdbus6; other terminals use conservative reminders without exact tab return.",
+    "Moving a Konsole tab into a new window requires reconnecting the monitored launcher; stale bindings fail conservatively.",
+    "Explicit profiles, OSS/local-provider launches, batch/maintenance commands, non-Unix platforms and unavailable live interface use scoped basic hooks; they do not capture originals or precise request lifecycle.",
+    "Original messages are in-memory only. Restarting Mori loses delivered history; undelivered IPC notices retry while the monitored CLI is running.",
+    "Per-message capture limit is 2 Mi Unicode characters; v2 IPC limit is 12 MiB, existing v1 limit remains 64 KiB."
+  ],
+  "localVerificationPolicy": "Only minimal relevant local checks at each stage; real CLI tests use an isolated local mock model; desktop checks operate only owned temporary windows/tabs."
+}

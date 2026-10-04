@@ -1,0 +1,1797 @@
+{
+  "schema_version": 1,
+  "canvas": [
+    280,
+    230
+  ],
+  "baseline": 222,
+  "walk_stride_pixels": 56,
+  "walk_sway_degrees": 0.7,
+  "clips": {
+    "walk-left": {
+      "family": "walk-left",
+      "durations": [
+        180,
+        180,
+        180,
+        180
+      ],
+      "loop": true,
+      "frames": [
+        "walk-left-0.png",
+        "walk-left-1.png",
+        "walk-left-2.png",
+        "walk-left-3.png"
+      ]
+    },
+    "walk-right": {
+      "family": "walk-right",
+      "durations": [
+        180,
+        180,
+        180,
+        180
+      ],
+      "loop": true,
+      "frames": [
+        "walk-right-0.png",
+        "walk-right-1.png",
+        "walk-right-2.png",
+        "walk-right-3.png"
+      ]
+    },
+    "walk-up": {
+      "family": "walk-up",
+      "durations": [
+        180,
+        180,
+        180,
+        180
+      ],
+      "loop": true,
+      "frames": [
+        "walk-up-0.png",
+        "walk-up-1.png",
+        "walk-up-2.png",
+        "walk-up-3.png"
+      ]
+    },
+    "walk-down": {
+      "family": "walk-down",
+      "durations": [
+        180,
+        180,
+        180,
+        180
+      ],
+      "loop": true,
+      "frames": [
+        "walk-down-0.png",
+        "walk-down-1.png",
+        "walk-down-2.png",
+        "walk-down-3.png"
+      ]
+    },
+    "head-1-0": {
+      "family": "head",
+      "durations": [
+        160,
+        500,
+        280
+      ],
+      "loop": false,
+      "frames": [
+        "head-0.png",
+        "head-1.png",
+        "head-0.png"
+      ]
+    },
+    "head-1-1": {
+      "family": "head",
+      "durations": [
+        160,
+        300,
+        300,
+        500,
+        280
+      ],
+      "loop": false,
+      "frames": [
+        "head-0.png",
+        "head-1.png",
+        "head-0.png",
+        "head-1.png",
+        "head-0.png"
+      ]
+    },
+    "head-2-0": {
+      "family": "head",
+      "durations": [
+        160,
+        300,
+        500,
+        280
+      ],
+      "loop": false,
+      "frames": [
+        "head-0.png",
+        "head-1.png",
+        "head-2.png",
+        "head-0.png"
+      ]
+    },
+    "head-2-1": {
+      "family": "head",
+      "durations": [
+        160,
+        300,
+        300,
+        500,
+        280
+      ],
+      "loop": false,
+      "frames": [
+        "head-0.png",
+        "head-1.png",
+        "head-2.png",
+        "head-1.png",
+        "head-0.png"
+      ]
+    },
+    "head-3-0": {
+      "family": "head",
+      "durations": [
+        160,
+        300,
+        300,
+        300,
+        500,
+        280
+      ],
+      "loop": false,
+      "frames": [
+        "head-0.png",
+        "head-1.png",
+        "head-2.png",
+        "head-3.png",
+        "head-2.png",
+        "head-0.png"
+      ]
+    },
+    "head-3-1": {
+      "family": "head",
+      "durations": [
+        160,
+        300,
+        300,
+        300,
+        500,
+        280
+      ],
+      "loop": false,
+      "frames": [
+        "head-0.png",
+        "head-1.png",
+        "head-3.png",
+        "head-2.png",
+        "head-3.png",
+        "head-0.png"
+      ]
+    },
+    "tail-1-0": {
+      "family": "tail",
+      "durations": [
+        160,
+        500,
+        280
+      ],
+      "loop": false,
+      "frames": [
+        "tail-0.png",
+        "tail-1.png",
+        "tail-0.png"
+      ]
+    },
+    "tail-1-1": {
+      "family": "tail",
+      "durations": [
+        160,
+        300,
+        300,
+        500,
+        280
+      ],
+      "loop": false,
+      "frames": [
+        "tail-0.png",
+        "tail-1.png",
+        "tail-0.png",
+        "tail-1.png",
+        "tail-0.png"
+      ]
+    },
+    "tail-2-0": {
+      "family": "tail",
+      "durations": [
+        160,
+        300,
+        500,
+        280
+      ],
+      "loop": false,
+      "frames": [
+        "tail-0.png",
+        "tail-1.png",
+        "tail-2.png",
+        "tail-0.png"
+      ]
+    },
+    "tail-2-1": {
+      "family": "tail",
+      "durations": [
+        160,
+        300,
+        300,
+        500,
+        280
+      ],
+      "loop": false,
+      "frames": [
+        "tail-0.png",
+        "tail-1.png",
+        "tail-2.png",
+        "tail-1.png",
+        "tail-0.png"
+      ]
+    },
+    "tail-3-0": {
+      "family": "tail",
+      "durations": [
+        160,
+        300,
+        300,
+        300,
+        500,
+        280
+      ],
+      "loop": false,
+      "frames": [
+        "tail-0.png",
+        "tail-1.png",
+        "tail-2.png",
+        "tail-3.png",
+        "tail-2.png",
+        "tail-0.png"
+      ]
+    },
+    "tail-3-1": {
+      "family": "tail",
+      "durations": [
+        160,
+        300,
+        300,
+        300,
+        500,
+        280
+      ],
+      "loop": false,
+      "frames": [
+        "tail-0.png",
+        "tail-1.png",
+        "tail-3.png",
+        "tail-2.png",
+        "tail-3.png",
+        "tail-0.png"
+      ]
+    },
+    "cheek-left-1-0": {
+      "family": "cheek-left",
+      "durations": [
+        100,
+        420,
+        260
+      ],
+      "loop": false,
+      "frames": [
+        "cheek-left-0.png",
+        "cheek-left-1.png",
+        "cheek-left-0.png"
+      ]
+    },
+    "cheek-left-1-1": {
+      "family": "cheek-left",
+      "durations": [
+        100,
+        240,
+        240,
+        420,
+        260
+      ],
+      "loop": false,
+      "frames": [
+        "cheek-left-0.png",
+        "cheek-left-1.png",
+        "cheek-left-0.png",
+        "cheek-left-1.png",
+        "cheek-left-0.png"
+      ]
+    },
+    "cheek-left-2-0": {
+      "family": "cheek-left",
+      "durations": [
+        100,
+        240,
+        420,
+        260
+      ],
+      "loop": false,
+      "frames": [
+        "cheek-left-0.png",
+        "cheek-left-1.png",
+        "cheek-left-2.png",
+        "cheek-left-0.png"
+      ]
+    },
+    "cheek-left-2-1": {
+      "family": "cheek-left",
+      "durations": [
+        100,
+        240,
+        240,
+        420,
+        260
+      ],
+      "loop": false,
+      "frames": [
+        "cheek-left-0.png",
+        "cheek-left-1.png",
+        "cheek-left-2.png",
+        "cheek-left-1.png",
+        "cheek-left-0.png"
+      ]
+    },
+    "cheek-left-3-0": {
+      "family": "cheek-left",
+      "durations": [
+        100,
+        240,
+        240,
+        240,
+        420,
+        260
+      ],
+      "loop": false,
+      "frames": [
+        "cheek-left-0.png",
+        "cheek-left-1.png",
+        "cheek-left-2.png",
+        "cheek-left-3.png",
+        "cheek-left-2.png",
+        "cheek-left-0.png"
+      ]
+    },
+    "cheek-left-3-1": {
+      "family": "cheek-left",
+      "durations": [
+        100,
+        240,
+        240,
+        240,
+        420,
+        260
+      ],
+      "loop": false,
+      "frames": [
+        "cheek-left-0.png",
+        "cheek-left-1.png",
+        "cheek-left-3.png",
+        "cheek-left-2.png",
+        "cheek-left-3.png",
+        "cheek-left-0.png"
+      ]
+    },
+    "cheek-right-1-0": {
+      "family": "cheek-right",
+      "durations": [
+        100,
+        420,
+        260
+      ],
+      "loop": false,
+      "frames": [
+        "cheek-right-0.png",
+        "cheek-right-1.png",
+        "cheek-right-0.png"
+      ]
+    },
+    "cheek-right-1-1": {
+      "family": "cheek-right",
+      "durations": [
+        100,
+        240,
+        240,
+        420,
+        260
+      ],
+      "loop": false,
+      "frames": [
+        "cheek-right-0.png",
+        "cheek-right-1.png",
+        "cheek-right-0.png",
+        "cheek-right-1.png",
+        "cheek-right-0.png"
+      ]
+    },
+    "cheek-right-2-0": {
+      "family": "cheek-right",
+      "durations": [
+        100,
+        240,
+        420,
+        260
+      ],
+      "loop": false,
+      "frames": [
+        "cheek-right-0.png",
+        "cheek-right-1.png",
+        "cheek-right-2.png",
+        "cheek-right-0.png"
+      ]
+    },
+    "cheek-right-2-1": {
+      "family": "cheek-right",
+      "durations": [
+        100,
+        240,
+        240,
+        420,
+        260
+      ],
+      "loop": false,
+      "frames": [
+        "cheek-right-0.png",
+        "cheek-right-1.png",
+        "cheek-right-2.png",
+        "cheek-right-1.png",
+        "cheek-right-0.png"
+      ]
+    },
+    "cheek-right-3-0": {
+      "family": "cheek-right",
+      "durations": [
+        100,
+        240,
+        240,
+        240,
+        420,
+        260
+      ],
+      "loop": false,
+      "frames": [
+        "cheek-right-0.png",
+        "cheek-right-1.png",
+        "cheek-right-2.png",
+        "cheek-right-3.png",
+        "cheek-right-2.png",
+        "cheek-right-0.png"
+      ]
+    },
+    "cheek-right-3-1": {
+      "family": "cheek-right",
+      "durations": [
+        100,
+        240,
+        240,
+        240,
+        420,
+        260
+      ],
+      "loop": false,
+      "frames": [
+        "cheek-right-0.png",
+        "cheek-right-1.png",
+        "cheek-right-3.png",
+        "cheek-right-2.png",
+        "cheek-right-3.png",
+        "cheek-right-0.png"
+      ]
+    },
+    "pickup": {
+      "family": "pickup",
+      "durations": [
+        180,
+        300,
+        300,
+        300
+      ],
+      "loop": true,
+      "frames": [
+        "pickup-0.png",
+        "pickup-1.png",
+        "pickup-2.png",
+        "pickup-3.png"
+      ]
+    },
+    "landing": {
+      "family": "landing",
+      "durations": [
+        120,
+        180,
+        460,
+        260
+      ],
+      "loop": false,
+      "frames": [
+        "landing-0.png",
+        "landing-1.png",
+        "landing-2.png",
+        "landing-3.png"
+      ]
+    },
+    "mouse-look": {
+      "family": "mouse-look",
+      "durations": [
+        600,
+        600,
+        600,
+        600
+      ],
+      "loop": true,
+      "frames": [
+        "mouse-look-0.png",
+        "mouse-look-1.png",
+        "mouse-look-2.png",
+        "mouse-look-3.png"
+      ]
+    },
+    "mouse-curious": {
+      "family": "mouse-curious",
+      "durations": [
+        160,
+        320,
+        520,
+        360
+      ],
+      "loop": false,
+      "frames": [
+        "mouse-curious-0.png",
+        "mouse-curious-1.png",
+        "mouse-curious-2.png",
+        "mouse-curious-3.png"
+      ]
+    },
+    "mouse-shy": {
+      "family": "mouse-shy",
+      "durations": [
+        120,
+        260,
+        520,
+        360
+      ],
+      "loop": false,
+      "frames": [
+        "mouse-shy-0.png",
+        "mouse-shy-1.png",
+        "mouse-shy-2.png",
+        "mouse-shy-3.png"
+      ]
+    },
+    "mouse-settle": {
+      "family": "mouse-curious",
+      "durations": [
+        600,
+        500
+      ],
+      "loop": false,
+      "frames": [
+        "mouse-curious-3.png",
+        "mouse-curious-0.png"
+      ]
+    },
+    "mouse-curious-left": {
+      "family": "mouse-curious-left",
+      "durations": [
+        160,
+        320,
+        520,
+        360
+      ],
+      "loop": false,
+      "frames": [
+        "mouse-curious-left-0.png",
+        "mouse-curious-left-1.png",
+        "mouse-curious-left-2.png",
+        "mouse-curious-left-3.png"
+      ]
+    },
+    "mouse-shy-left": {
+      "family": "mouse-shy-left",
+      "durations": [
+        120,
+        260,
+        520,
+        360
+      ],
+      "loop": false,
+      "frames": [
+        "mouse-shy-left-0.png",
+        "mouse-shy-left-1.png",
+        "mouse-shy-left-2.png",
+        "mouse-shy-left-3.png"
+      ]
+    },
+    "mouse-settle-left": {
+      "family": "mouse-curious-left",
+      "durations": [
+        600,
+        500
+      ],
+      "loop": false,
+      "frames": [
+        "mouse-curious-left-3.png",
+        "mouse-curious-left-0.png"
+      ]
+    },
+    "window-peek-right": {
+      "family": "window-peek-right",
+      "durations": [
+        480,
+        640,
+        1280,
+        1040,
+        1280,
+        1200,
+        1080
+      ],
+      "loop": false,
+      "offsets": [
+        [
+          9,
+          0
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          9,
+          0
+        ]
+      ],
+      "frames": [
+        "window-peek-right-0.png",
+        "window-peek-right-1.png",
+        "window-peek-right-2.png",
+        "window-peek-right-3.png",
+        "window-peek-right-2.png",
+        "window-peek-right-1.png",
+        "window-peek-right-0.png"
+      ]
+    },
+    "window-peek-left": {
+      "family": "window-peek-left",
+      "durations": [
+        480,
+        640,
+        1280,
+        1040,
+        1280,
+        1200,
+        1080
+      ],
+      "loop": false,
+      "offsets": [
+        [
+          5,
+          0
+        ],
+        [
+          7,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          7,
+          0
+        ],
+        [
+          5,
+          0
+        ]
+      ],
+      "frames": [
+        "window-peek-left-0.png",
+        "window-peek-left-1.png",
+        "window-peek-left-2.png",
+        "window-peek-left-3.png",
+        "window-peek-left-2.png",
+        "window-peek-left-1.png",
+        "window-peek-left-0.png"
+      ]
+    },
+    "window-seat": {
+      "family": "window-seat",
+      "durations": [
+        200,
+        260,
+        300,
+        360
+      ],
+      "loop": false,
+      "anchors": [
+        [
+          175,
+          222
+        ],
+        [
+          174,
+          222
+        ],
+        [
+          174,
+          174
+        ],
+        [
+          177,
+          174
+        ]
+      ],
+      "frames": [
+        "window-seat-0.png",
+        "window-seat-1.png",
+        "window-seat-2.png",
+        "window-seat-3.png"
+      ]
+    },
+    "window-swing": {
+      "family": "window-swing",
+      "durations": [
+        400,
+        360,
+        240,
+        360,
+        240,
+        180,
+        380
+      ],
+      "loop": true,
+      "anchors": [
+        [
+          175,
+          172
+        ],
+        [
+          175,
+          172
+        ],
+        [
+          175,
+          172
+        ],
+        [
+          174,
+          175
+        ],
+        [
+          175,
+          172
+        ],
+        [
+          177,
+          176
+        ],
+        [
+          175,
+          172
+        ]
+      ],
+      "frames": [
+        "window-swing-0.png",
+        "window-swing-1.png",
+        "window-swing-0.png",
+        "window-swing-2.png",
+        "window-swing-0.png",
+        "window-swing-3.png",
+        "window-swing-0.png"
+      ]
+    },
+    "window-rise": {
+      "family": "window-seat",
+      "durations": [
+        200,
+        280,
+        300,
+        340
+      ],
+      "loop": false,
+      "anchors": [
+        [
+          177,
+          174
+        ],
+        [
+          174,
+          174
+        ],
+        [
+          174,
+          222
+        ],
+        [
+          175,
+          222
+        ]
+      ],
+      "frames": [
+        "window-seat-3.png",
+        "window-seat-2.png",
+        "window-seat-1.png",
+        "window-seat-0.png"
+      ]
+    },
+    "window-consider": {
+      "family": "window-press",
+      "durations": [
+        240,
+        420,
+        340
+      ],
+      "loop": false,
+      "frames": [
+        "window-press-0.png",
+        "window-press-1.png",
+        "window-press-0.png"
+      ]
+    },
+    "window-press": {
+      "family": "window-press",
+      "durations": [
+        320,
+        1280,
+        400
+      ],
+      "loop": false,
+      "frames": [
+        "window-press-0.png",
+        "window-press-1.png",
+        "window-press-2.png"
+      ]
+    },
+    "window-press-recover": {
+      "family": "window-press",
+      "durations": [
+        120,
+        340,
+        300
+      ],
+      "loop": false,
+      "frames": [
+        "window-press-2.png",
+        "window-press-3.png",
+        "window-press-0.png"
+      ]
+    },
+    "base-nothing": {
+      "family": "base-nothing",
+      "durations": [
+        2200,
+        120,
+        1400,
+        1000
+      ],
+      "loop": true,
+      "frames": [
+        "base-nothing-0.png",
+        "base-nothing-1.png",
+        "base-nothing-2.png",
+        "base-nothing-3.png"
+      ]
+    },
+    "base-eat": {
+      "family": "base-eat",
+      "durations": [
+        440,
+        500,
+        640,
+        500
+      ],
+      "loop": true,
+      "frames": [
+        "base-eat-0.png",
+        "base-eat-1.png",
+        "base-eat-2.png",
+        "base-eat-3.png"
+      ]
+    },
+    "base-think": {
+      "family": "base-think",
+      "durations": [
+        440,
+        760,
+        760,
+        600
+      ],
+      "loop": true,
+      "frames": [
+        "base-think-0.png",
+        "base-think-1.png",
+        "base-think-2.png",
+        "base-think-3.png"
+      ]
+    },
+    "base-attention": {
+      "family": "base-attention",
+      "durations": [
+        600,
+        600,
+        600,
+        800
+      ],
+      "loop": true,
+      "frames": [
+        "base-attention-0.png",
+        "base-attention-1.png",
+        "base-attention-2.png",
+        "base-attention-3.png"
+      ]
+    },
+    "base-cheerup": {
+      "family": "base-cheerup",
+      "durations": [
+        320,
+        560,
+        720,
+        800
+      ],
+      "loop": false,
+      "frames": [
+        "base-cheerup-0.png",
+        "base-cheerup-1.png",
+        "base-cheerup-2.png",
+        "base-cheerup-3.png"
+      ]
+    },
+    "base-true": {
+      "family": "base-true",
+      "durations": [
+        320,
+        560,
+        680,
+        800
+      ],
+      "loop": false,
+      "frames": [
+        "base-true-0.png",
+        "base-true-1.png",
+        "base-true-2.png",
+        "base-true-3.png"
+      ]
+    },
+    "base-wrong": {
+      "family": "base-wrong",
+      "durations": [
+        360,
+        640,
+        720,
+        900
+      ],
+      "loop": false,
+      "frames": [
+        "base-wrong-0.png",
+        "base-wrong-1.png",
+        "base-wrong-2.png",
+        "base-wrong-3.png"
+      ]
+    },
+    "base-touch": {
+      "family": "head",
+      "durations": [
+        220,
+        440,
+        560,
+        800
+      ],
+      "loop": false,
+      "frames": [
+        "head-0.png",
+        "head-1.png",
+        "head-2.png",
+        "head-3.png"
+      ]
+    },
+    "base-pickup": {
+      "family": "pickup",
+      "durations": [
+        200,
+        360,
+        360,
+        500
+      ],
+      "loop": true,
+      "frames": [
+        "pickup-0.png",
+        "pickup-1.png",
+        "pickup-2.png",
+        "pickup-3.png"
+      ]
+    },
+    "daily-stretch": {
+      "family": "daily-stretch",
+      "durations": [
+        280,
+        600,
+        720,
+        440
+      ],
+      "loop": false,
+      "frames": [
+        "daily-stretch-0.png",
+        "daily-stretch-1.png",
+        "daily-stretch-2.png",
+        "daily-stretch-3.png"
+      ]
+    },
+    "daily-nap": {
+      "family": "daily-nap",
+      "durations": [
+        520,
+        1400,
+        1300,
+        780
+      ],
+      "loop": false,
+      "frames": [
+        "daily-nap-0.png",
+        "daily-nap-1.png",
+        "daily-nap-2.png",
+        "daily-nap-3.png"
+      ]
+    },
+    "window-peek-top": {
+      "family": "window-peek-top",
+      "durations": [
+        480,
+        640,
+        1280,
+        1040,
+        1280,
+        1200,
+        1080
+      ],
+      "loop": false,
+      "anchors": [
+        [
+          141,
+          215
+        ],
+        [
+          142,
+          214
+        ],
+        [
+          148,
+          217
+        ],
+        [
+          145,
+          215
+        ],
+        [
+          148,
+          217
+        ],
+        [
+          142,
+          214
+        ],
+        [
+          141,
+          215
+        ]
+      ],
+      "frames": [
+        "window-peek-top-0.png",
+        "window-peek-top-1.png",
+        "window-peek-top-2.png",
+        "window-peek-top-3.png",
+        "window-peek-top-2.png",
+        "window-peek-top-1.png",
+        "window-peek-top-0.png"
+      ]
+    },
+    "system-pen": {
+      "family": "system-pen",
+      "frames": [
+        "system-pen-0.png",
+        "system-pen-1.png",
+        "system-pen-2.png",
+        "system-pen-3.png"
+      ],
+      "durations": [
+        300,
+        300,
+        300,
+        300
+      ],
+      "loop": false,
+      "anchors": [
+        [
+          191,
+          127
+        ],
+        [
+          242,
+          142
+        ],
+        [
+          248,
+          148
+        ],
+        [
+          236,
+          101
+        ]
+      ]
+    },
+    "system-grip": {
+      "family": "system-grip",
+      "frames": [
+        "system-grip-0.png",
+        "system-grip-1.png",
+        "system-grip-2.png",
+        "system-grip-3.png"
+      ],
+      "durations": [
+        300,
+        300,
+        300,
+        300
+      ],
+      "loop": false,
+      "anchors": [
+        [
+          231,
+          119
+        ],
+        [
+          220,
+          135
+        ],
+        [
+          220,
+          138
+        ],
+        [
+          237,
+          120
+        ]
+      ]
+    },
+    "system-reach": {
+      "family": "system-reach",
+      "frames": [
+        "system-reach-0.png",
+        "system-reach-1.png",
+        "system-reach-2.png",
+        "system-reach-3.png"
+      ],
+      "durations": [
+        300,
+        300,
+        300,
+        300
+      ],
+      "loop": false,
+      "anchors": [
+        [
+          203,
+          124
+        ],
+        [
+          227,
+          78
+        ],
+        [
+          224,
+          6
+        ],
+        [
+          222,
+          123
+        ]
+      ]
+    },
+    "life-hungry": {
+      "family": "life-food",
+      "frames": [
+        "life-food-0.png",
+        "life-food-1.png",
+        "life-food-0.png",
+        "life-food-5.png"
+      ],
+      "durations": [
+        500,
+        1100,
+        800,
+        700
+      ],
+      "loop": false
+    },
+    "life-menu": {
+      "family": "life-food",
+      "frames": [
+        "life-food-1.png",
+        "life-food-0.png",
+        "life-food-1.png",
+        "life-food-5.png"
+      ],
+      "durations": [
+        800,
+        700,
+        1400,
+        600
+      ],
+      "loop": false
+    },
+    "life-resist": {
+      "family": "life-food",
+      "frames": [
+        "life-food-0.png",
+        "life-food-1.png",
+        "life-food-5.png"
+      ],
+      "durations": [
+        1200,
+        1400,
+        800
+      ],
+      "loop": false
+    },
+    "life-snack": {
+      "family": "life-food",
+      "frames": [
+        "life-food-2.png",
+        "life-food-3.png",
+        "life-food-3.png",
+        "life-food-4.png",
+        "life-food-5.png"
+      ],
+      "durations": [
+        1600,
+        1900,
+        1700,
+        2600,
+        1200
+      ],
+      "loop": false
+    },
+    "life-share": {
+      "family": "life-food",
+      "frames": [
+        "life-food-2.png",
+        "life-food-3.png",
+        "life-food-4.png",
+        "life-food-3.png",
+        "life-food-4.png",
+        "life-food-5.png"
+      ],
+      "durations": [
+        1500,
+        1500,
+        1700,
+        1600,
+        2200,
+        1300
+      ],
+      "loop": false
+    },
+    "life-crumbs": {
+      "family": "life-food",
+      "frames": [
+        "life-food-4.png",
+        "life-food-5.png",
+        "life-food-5.png"
+      ],
+      "durations": [
+        1800,
+        2000,
+        1200
+      ],
+      "loop": false
+    },
+    "life-blank": {
+      "family": "life-dream",
+      "frames": [
+        "life-dream-0.png",
+        "life-dream-2.png",
+        "life-dream-0.png",
+        "life-dream-5.png"
+      ],
+      "durations": [
+        700,
+        1400,
+        600,
+        800
+      ],
+      "loop": false
+    },
+    "life-cloud": {
+      "family": "life-dream",
+      "frames": [
+        "life-dream-1.png",
+        "life-dream-3.png",
+        "life-dream-5.png"
+      ],
+      "durations": [
+        900,
+        1800,
+        800
+      ],
+      "loop": false
+    },
+    "life-remember": {
+      "family": "life-dream",
+      "frames": [
+        "life-dream-0.png",
+        "life-dream-4.png",
+        "life-dream-5.png"
+      ],
+      "durations": [
+        1000,
+        1400,
+        900
+      ],
+      "loop": false
+    },
+    "life-daydream": {
+      "family": "life-dream",
+      "frames": [
+        "life-dream-0.png",
+        "life-dream-2.png",
+        "life-dream-3.png",
+        "life-dream-4.png",
+        "life-dream-5.png"
+      ],
+      "durations": [
+        1400,
+        2600,
+        3600,
+        1800,
+        1600
+      ],
+      "loop": false
+    },
+    "life-idea": {
+      "family": "life-dream",
+      "frames": [
+        "life-dream-1.png",
+        "life-dream-4.png",
+        "life-dream-3.png",
+        "life-dream-5.png"
+      ],
+      "durations": [
+        2100,
+        2200,
+        3000,
+        1500
+      ],
+      "loop": false
+    },
+    "life-forgot": {
+      "family": "life-dream",
+      "frames": [
+        "life-dream-4.png",
+        "life-dream-0.png",
+        "life-dream-2.png",
+        "life-dream-5.png"
+      ],
+      "durations": [
+        1800,
+        2000,
+        2400,
+        1400
+      ],
+      "loop": false
+    },
+    "life-yawn": {
+      "family": "life-sleep",
+      "frames": [
+        "life-sleep-0.png",
+        "life-sleep-1.png",
+        "life-sleep-5.png"
+      ],
+      "durations": [
+        700,
+        1900,
+        800
+      ],
+      "loop": false
+    },
+    "life-nod": {
+      "family": "life-sleep",
+      "frames": [
+        "life-sleep-0.png",
+        "life-sleep-2.png",
+        "life-sleep-3.png",
+        "life-sleep-5.png"
+      ],
+      "durations": [
+        700,
+        1200,
+        800,
+        900
+      ],
+      "loop": false
+    },
+    "life-rub": {
+      "family": "life-sleep",
+      "frames": [
+        "life-sleep-0.png",
+        "life-sleep-4.png",
+        "life-sleep-5.png"
+      ],
+      "durations": [
+        700,
+        1800,
+        1000
+      ],
+      "loop": false
+    },
+    "life-doze": {
+      "family": "life-sleep",
+      "frames": [
+        "life-sleep-0.png",
+        "life-sleep-1.png",
+        "life-sleep-2.png",
+        "life-sleep-2.png",
+        "life-sleep-3.png",
+        "life-sleep-4.png",
+        "life-sleep-5.png"
+      ],
+      "durations": [
+        1200,
+        1600,
+        7000,
+        7000,
+        800,
+        2000,
+        1800
+      ],
+      "loop": false
+    },
+    "life-rest": {
+      "family": "life-sleep",
+      "frames": [
+        "life-sleep-0.png",
+        "life-sleep-2.png",
+        "life-sleep-2.png",
+        "life-sleep-4.png",
+        "life-sleep-5.png"
+      ],
+      "durations": [
+        1600,
+        4000,
+        5000,
+        2000,
+        1800
+      ],
+      "loop": false
+    },
+    "life-awake": {
+      "family": "life-sleep",
+      "frames": [
+        "life-sleep-3.png",
+        "life-sleep-4.png",
+        "life-sleep-5.png"
+      ],
+      "durations": [
+        1200,
+        2300,
+        1800
+      ],
+      "loop": false
+    },
+    "life-look": {
+      "family": "life-curious",
+      "frames": [
+        "life-curious-0.png",
+        "life-curious-1.png",
+        "life-curious-5.png"
+      ],
+      "durations": [
+        800,
+        1700,
+        900
+      ],
+      "loop": false
+    },
+    "life-listen": {
+      "family": "life-curious",
+      "frames": [
+        "life-curious-0.png",
+        "life-curious-2.png",
+        "life-curious-0.png"
+      ],
+      "durations": [
+        1000,
+        1600,
+        900
+      ],
+      "loop": false
+    },
+    "life-tiptoe": {
+      "family": "life-curious",
+      "frames": [
+        "life-curious-0.png",
+        "life-curious-2.png",
+        "life-curious-5.png"
+      ],
+      "durations": [
+        700,
+        1700,
+        900
+      ],
+      "loop": false
+    },
+    "life-arrow": {
+      "family": "life-curious",
+      "frames": [
+        "life-curious-0.png",
+        "life-curious-1.png",
+        "life-curious-3.png",
+        "life-curious-4.png",
+        "life-curious-5.png"
+      ],
+      "durations": [
+        1300,
+        1600,
+        2100,
+        1300,
+        1800
+      ],
+      "loop": false
+    },
+    "life-investigate": {
+      "family": "life-curious",
+      "frames": [
+        "life-curious-1.png",
+        "life-curious-2.png",
+        "life-curious-0.png",
+        "life-curious-5.png"
+      ],
+      "durations": [
+        2100,
+        2200,
+        2300,
+        1800
+      ],
+      "loop": false
+    },
+    "life-discover": {
+      "family": "life-curious",
+      "frames": [
+        "life-curious-0.png",
+        "life-curious-1.png",
+        "life-curious-5.png",
+        "life-curious-5.png"
+      ],
+      "durations": [
+        1700,
+        2300,
+        2300,
+        1200
+      ],
+      "loop": false
+    },
+    "life-wave": {
+      "family": "life-friend",
+      "frames": [
+        "life-friend-0.png",
+        "life-friend-5.png"
+      ],
+      "durations": [
+        1700,
+        1200
+      ],
+      "loop": false
+    },
+    "life-wait": {
+      "family": "life-friend",
+      "frames": [
+        "life-friend-1.png",
+        "life-friend-2.png",
+        "life-friend-5.png"
+      ],
+      "durations": [
+        1100,
+        1500,
+        900
+      ],
+      "loop": false
+    },
+    "life-giggle": {
+      "family": "life-friend",
+      "frames": [
+        "life-friend-4.png",
+        "life-friend-5.png"
+      ],
+      "durations": [
+        1900,
+        1200
+      ],
+      "loop": false
+    },
+    "life-pout": {
+      "family": "life-friend",
+      "frames": [
+        "life-friend-0.png",
+        "life-friend-3.png",
+        "life-friend-4.png",
+        "life-friend-5.png"
+      ],
+      "durations": [
+        1000,
+        2600,
+        2100,
+        1700
+      ],
+      "loop": false
+    },
+    "life-pat": {
+      "family": "life-friend",
+      "frames": [
+        "life-friend-1.png",
+        "life-friend-2.png",
+        "life-friend-1.png",
+        "life-friend-5.png"
+      ],
+      "durations": [
+        2200,
+        2000,
+        2400,
+        1500
+      ],
+      "loop": false
+    },
+    "life-tidy": {
+      "family": "life-friend",
+      "frames": [
+        "life-friend-2.png",
+        "life-friend-5.png",
+        "life-friend-5.png"
+      ],
+      "durations": [
+        1800,
+        2400,
+        1600
+      ],
+      "loop": false
+    },
+    "life-tail": {
+      "family": "life-ocean",
+      "frames": [
+        "life-ocean-0.png",
+        "life-ocean-5.png"
+      ],
+      "durations": [
+        1900,
+        1200
+      ],
+      "loop": false
+    },
+    "life-hum": {
+      "family": "life-ocean",
+      "frames": [
+        "life-ocean-4.png",
+        "life-ocean-5.png"
+      ],
+      "durations": [
+        2100,
+        1100
+      ],
+      "loop": false
+    },
+    "life-shell-listen": {
+      "family": "life-ocean",
+      "frames": [
+        "life-ocean-1.png",
+        "life-ocean-5.png"
+      ],
+      "durations": [
+        2200,
+        1200
+      ],
+      "loop": false
+    },
+    "life-shell": {
+      "family": "life-ocean",
+      "frames": [
+        "life-ocean-1.png",
+        "life-ocean-2.png",
+        "life-ocean-5.png"
+      ],
+      "durations": [
+        2400,
+        3100,
+        1800
+      ],
+      "loop": false
+    },
+    "life-proud-tail": {
+      "family": "life-ocean",
+      "frames": [
+        "life-ocean-0.png",
+        "life-ocean-3.png",
+        "life-ocean-5.png"
+      ],
+      "durations": [
+        1900,
+        2700,
+        1800
+      ],
+      "loop": false
+    },
+    "life-sea": {
+      "family": "life-ocean",
+      "frames": [
+        "life-ocean-1.png",
+        "life-ocean-4.png",
+        "life-ocean-2.png",
+        "life-ocean-5.png"
+      ],
+      "durations": [
+        2400,
+        3300,
+        2400,
+        1900
+      ],
+      "loop": false
+    }
+  },
+  "window_support": [
+    175,
+    172
+  ],
+  "window_button_contact": [
+    241,
+    125
+  ],
+  "base_animations": {
+    "nothing": "base-nothing",
+    "eat": "base-eat",
+    "think": "base-think",
+    "attention": "base-attention",
+    "cheerup": "base-cheerup",
+    "true": "base-true",
+    "wrong": "base-wrong",
+    "touch": "base-touch",
+    "pickup": "base-pickup"
+  }
+}

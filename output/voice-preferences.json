@@ -1,0 +1,26 @@
+{
+  "feedback_voice": {
+    "provider": "Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+    "candidate": "bright_young",
+    "label": "B：清亮灵动，偏少女感",
+    "manifest": "output/voice-selected-qwen/manifest.json"
+  },
+  "dialogue_voice": {
+    "candidate_provider": "Microsoft Edge online TTS via edge-tts",
+    "status": "cached_voice_and_phrase_pacing_selected_online_latency_unverified",
+    "requires_registration": false,
+    "requires_api_key": false,
+    "candidate_voice": "zh-CN-XiaoyiNeural",
+    "rate": "+0%",
+    "pitch": "+10Hz",
+    "kokoro_listening_status": "rejected_by_user",
+    "trial": "output/edge-dialogue-study/trial.json",
+    "listening_feedback": "开头已听清，后半句采用更清亮、更快版更舒服。",
+    "cached_audition": "output/edge-dialogue-study/selected.wav",
+    "api_parameter_status": "long_dialogue_defaults_pending_online_audition",
+    "online_latency_verified": false
+  },
+  "runtime_audio_integration": "not_implemented",
+  "qwen_additional_generation": "deferred_to_new_conversation_by_user",
+  "cleanup": "completed_for_output_obsolete_artifacts"
+}

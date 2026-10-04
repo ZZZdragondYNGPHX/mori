@@ -1,0 +1,24 @@
+{
+  "status": "peek-pose-review-draft",
+  "size": [
+    1377,
+    1142
+  ],
+  "mode": "RGBA",
+  "alpha_extrema": [
+    0,
+    255
+  ],
+  "visible_bounds_alpha_128": [
+    66,
+    142,
+    1318,
+    1093
+  ],
+  "bytes": 1007555,
+  "notes": [
+    "Generated PNG copied unchanged; no image postprocessing.",
+    "Approved facial design retained; hips held back, head extends sideways, one open supporting hand below chin, second arm low.",
+    "Window occlusion is illustrated separately in the HTML preview, not baked into the PNG."
+  ]
+}

@@ -1,0 +1,5 @@
+PASS: native window geometry readback PySide6.QtCore.QRect(476, 286, 508, 398)
+PASS: native maximization and state readback
+PASS: native unmaximization and state readback
+PASS: native minimization
+PASS: restoration by the same window identity

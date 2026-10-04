@@ -1,0 +1,86 @@
+{
+  "deleted": [
+    {
+      "path": "output/voice-study-v1",
+      "bytes": 1415208,
+      "files": 14
+    },
+    {
+      "path": "output/voice-study-v2",
+      "bytes": 776993,
+      "files": 14
+    },
+    {
+      "path": "output/voice-study-v3-qwen",
+      "bytes": 626606,
+      "files": 16
+    },
+    {
+      "path": "output/voice-study-v4-voicedesign",
+      "bytes": 611021,
+      "files": 11
+    },
+    {
+      "path": "output/kokoro-local-study",
+      "bytes": 138205,
+      "files": 7
+    },
+    {
+      "path": "output/kokoro-local-study-v2",
+      "bytes": 156298,
+      "files": 5
+    },
+    {
+      "path": "output/tts-scriptbook",
+      "bytes": 798610,
+      "files": 3
+    },
+    {
+      "path": "output/character-expansion/v1",
+      "bytes": 3921760,
+      "files": 6
+    },
+    {
+      "path": "output/character-refresh/package",
+      "bytes": 10449143,
+      "files": 1
+    },
+    {
+      "path": "output/window-study-v4/inspection",
+      "bytes": 1188867,
+      "files": 20
+    },
+    {
+      "path": "output/edge-dialogue-study/cached_light_fast.wav",
+      "bytes": 116164,
+      "files": 1
+    },
+    {
+      "path": "output/edge-dialogue-study/cached_bright_fast.wav",
+      "bytes": 110234,
+      "files": 1
+    },
+    {
+      "path": "output/edge-dialogue-study/cached_clear_opening.wav",
+      "bytes": 114200,
+      "files": 1
+    },
+    {
+      "path": "output/edge-dialogue-study/cached_clear_opening.json",
+      "bytes": 645,
+      "files": 1
+    },
+    {
+      "path": "output/life-study-v5/inspection",
+      "bytes": 2193199,
+      "files": 36
+    }
+  ],
+  "directories_removed": 11,
+  "files_removed": 137,
+  "bytes_removed": 22617153,
+  "retained": "selected Qwen B and cues, selected Edge sample and rebuild source, animation source directories and referenced previews",
+  "online_tts_latency_verified": false,
+  "qwen_completion": "deferred_to_new_conversation_by_user",
+  "local_validation": "deleted targets absent; selected audio and rebuild sources present; Qwen cue/license dependencies valid; changed scripts parse; no Markdown links into deleted directories"
+}

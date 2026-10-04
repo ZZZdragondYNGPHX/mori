@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mori Companion · 看向鼠标与好奇试探</title>
+<link rel="stylesheet" href="gesture-preview.css">
+<style>
+.arena{grid-column:1/-1}.arena-stage{margin:16px 20px 0;border-radius:12px;background:radial-gradient(ellipse at 60% 50%,#263e59,#182331 70%)}#arena{display:block;width:100%;height:auto;max-width:760px;margin:auto;touch-action:none;cursor:crosshair}.arena-help{padding:16px 20px 20px}.arena-help p{font-size:13px}.scene-controls{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}.scene-controls button,.reaction-controls button,.reaction-controls select{min-height:44px}.scene-controls button{font-size:13px}.state{min-height:24px;color:#f3bec8;font-size:13px;margin-top:12px}.mode-controls{display:flex;gap:16px;flex-wrap:wrap;margin-top:10px;font-size:13px;color:var(--muted)}.mode-controls label{display:flex;gap:6px;align-items:center;min-height:40px}.mode-controls input{accent-color:var(--cyan);width:17px;height:17px}.stage{height:250px}.reaction-controls{flex-wrap:wrap}.links{display:flex;flex-wrap:wrap;gap:14px;margin-top:10px;font-size:12px}.view{white-space:nowrap}
+</style>
+</head>
+<body>
+<header>
+<div class="brand">MORI COMPANION / 茉伴</div>
+<div class="intro"><div><h1>偷偷看你的小箭头</h1><p>先看一眼，伸手试探，再带着大尾巴追几步。<br>靠得太快，会害羞退开一点，再亲近地回望。</p></div><span class="batch">第三批 · 20 张关键姿势</span></div>
+<div class="toolbar" aria-label="播放控制"><button id="play" aria-pressed="true">暂停</button><button id="step">下一帧</button><label>速度<select id="speed"><option value=".5">0.5× 慢放</option><option value="1" selected>1× 正常</option><option value="1.5">1.5×</option></select></label><button id="background" aria-pressed="false">透明网格</button><span class="hint">移到角色附近 · 试探与回望分别绘制左右方向</span></div>
+<p id="status" class="reduced" aria-live="polite"></p>
+</header>
+<main>
+<section class="card arena"><div class="card-head"><h2>和鼠标玩一小会儿</h2><span class="view">靠近 → 试探 → 追逐／害羞回望</span></div>
+<div class="arena-stage"><canvas id="arena" width="760" height="400" role="img" aria-label="移动鼠标体验 Mori 的四向视线，也可使用下方方向按钮"></canvas></div>
+<div class="arena-help"><p>把鼠标移到角色附近，停一停，看看她的视线。点“试探后追几步”启动完整剧情；追逐时快速靠近，会害羞退一步。剧情之间留出安静时间，回到呼吸和眨眼。</p>
+<div class="scene-controls" aria-label="鼠标方向"><button data-look="left">看左边</button><button data-look="right">看右边</button><button data-look="up">看上方</button><button data-look="down">看下方</button></div>
+<div class="scene-controls"><button id="chase">试探后追几步</button><button id="shy">害羞退一步</button><button id="stop">停下来</button><button id="reset">回到中间</button><button id="mode" aria-pressed="false">切到专注模式</button></div>
+<div class="mode-controls"><label><input id="cursor-enabled" type="checkbox" checked>鼠标互动</label><label><input id="walking-enabled" type="checkbox" checked>主动走动</label></div>
+<div id="arena-state" class="state" aria-live="polite">站好啦，等你的小箭头靠近</div><div class="links"><a href="motion-preview.html">第一批：四向步态、摸头与尾巴</a><a href="gesture-preview.html">第二批：戳脸与拖拽落地</a></div></div>
+</section>
+<div id="cards" style="display:contents"></div>
+</main>
+<footer><p>附近视线短暂回应后留出安静间隔；完整剧情在桌宠中沿用已有频率设置。追逐最多约 4 秒、行程约 260px，保持一点距离；害羞只退一小步，随后亲近地回望。</p><p>专注模式暂停鼠标剧情，保留主动点击、拖拽和工作表情。工作事件到来时，在当前位置结束鼠标剧情。<a href="../output/mouse-study-v3/prompts.json">原画与内置生图提示词</a> · <a href="../src/asset_library/motion/clips.json">运行素材清单</a></p></footer>
+<script src="mouse-preview-data.js"></script><script src="mouse-preview.js"></script>
+</body>
+</html>

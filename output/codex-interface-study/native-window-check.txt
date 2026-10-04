@@ -1,0 +1,1 @@
+PASS: two independent native Konsole windows; two tabs; exact tab/window return; KWin activation verified
